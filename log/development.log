@@ -1,0 +1,1008 @@
+Started GET "/" for 127.0.0.1 at 2018-09-20 11:31:21 -0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/apresta/.rvm/gems/ruby-2.5.1/gems/railties-5.2.0/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/apresta/.rvm/gems/ruby-2.5.1/gems/railties-5.2.0/lib/rails/templates/rails/welcome/index.html.erb (1.6ms)
+Completed 200 OK in 12ms (Views: 4.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-20 11:33:08 -0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/apresta/.rvm/gems/ruby-2.5.1/gems/railties-5.2.0/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/apresta/.rvm/gems/ruby-2.5.1/gems/railties-5.2.0/lib/rails/templates/rails/welcome/index.html.erb (1.4ms)
+Completed 200 OK in 8ms (Views: 2.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-20 11:41:10 -0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/apresta/.rvm/gems/ruby-2.5.1/gems/railties-5.2.0/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/apresta/.rvm/gems/ruby-2.5.1/gems/railties-5.2.0/lib/rails/templates/rails/welcome/index.html.erb (1.3ms)
+Completed 200 OK in 7ms (Views: 2.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-20 11:47:49 -0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/apresta/.rvm/gems/ruby-2.5.1/gems/railties-5.2.0/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/apresta/.rvm/gems/ruby-2.5.1/gems/railties-5.2.0/lib/rails/templates/rails/welcome/index.html.erb (2.0ms)
+Completed 200 OK in 5ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-20 11:49:28 -0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/apresta/.rvm/gems/ruby-2.5.1/gems/railties-5.2.0/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/apresta/.rvm/gems/ruby-2.5.1/gems/railties-5.2.0/lib/rails/templates/rails/welcome/index.html.erb (1.8ms)
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-20 11:52:34 -0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/apresta/.rvm/gems/ruby-2.5.1/gems/railties-5.2.0/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/apresta/.rvm/gems/ruby-2.5.1/gems/railties-5.2.0/lib/rails/templates/rails/welcome/index.html.erb (1.8ms)
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ bin/rails:9
+  [1m[35m (15.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (17.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateArticles (20180920145357)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "articles" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "text" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20180920145357_create_articles.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180920145357"]]
+  ↳ bin/rails:9
+  [1m[35m (13.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-09-20 14:54:09.261036"], ["updated_at", "2018-09-20 14:54:09.261036"]]
+  ↳ bin/rails:9
+  [1m[35m (12.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateComments (20180920145515)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20180920145515_create_comments.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "comments" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "commenter" varchar, "body" text, "article_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, CONSTRAINT "fk_rails_3bf61a60d3"
+FOREIGN KEY ("article_id")
+  REFERENCES "articles" ("id")
+)[0m
+  ↳ db/migrate/20180920145515_create_comments.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_comments_on_article_id" ON "comments" ("article_id")[0m
+  ↳ db/migrate/20180920145515_create_comments.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180920145515"]]
+  ↳ bin/rails:9
+  [1m[35m (15.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/" for 127.0.0.1 at 2018-09-20 12:01:18 -0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/apresta/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/apresta/.rvm/gems/ruby-2.5.1/gems/railties-5.2.0/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/apresta/.rvm/gems/ruby-2.5.1/gems/railties-5.2.0/lib/rails/templates/rails/welcome/index.html.erb (1.8ms)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-20 12:02:18 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 863ms (Views: 862.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2018-09-20 12:02:21 -0300
+Processing by ArticlesController#new as HTML
+Filter chain halted as #<Proc:0x00007f37f074c488@/home/apresta/.rvm/gems/ruby-2.5.1/gems/actionpack-5.2.0/lib/action_controller/metal/http_authentication.rb:72> rendered or redirected
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2018-09-20 12:02:27 -0300
+Processing by ArticlesController#new as HTML
+Filter chain halted as #<Proc:0x00007f37f074c488@/home/apresta/.rvm/gems/ruby-2.5.1/gems/actionpack-5.2.0/lib/action_controller/metal/http_authentication.rb:72> rendered or redirected
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-20 12:02:31 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 23ms (Views: 21.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2018-09-20 12:02:34 -0300
+Processing by ArticlesController#new as HTML
+Filter chain halted as #<Proc:0x00007f37f074c488@/home/apresta/.rvm/gems/ruby-2.5.1/gems/actionpack-5.2.0/lib/action_controller/metal/http_authentication.rb:72> rendered or redirected
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-20 12:02:45 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 35ms (Views: 30.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-20 12:10:35 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 34ms (Views: 31.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-20 12:11:55 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 32ms (Views: 28.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2018-09-20 12:11:58 -0300
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:10
+  Rendered articles/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 59ms (Views: 12.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2018-09-20 12:12:00 -0300
+Processing by ArticlesController#new as HTML
+Filter chain halted as #<Proc:0x00007f37f074c488@/home/apresta/.rvm/gems/ruby-2.5.1/gems/actionpack-5.2.0/lib/action_controller/metal/http_authentication.rb:72> rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2018-09-20 12:12:07 -0300
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (17.0ms)
+  Rendered articles/new.html.erb within layouts/application (18.5ms)
+Completed 200 OK in 46ms (Views: 31.5ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2018-09-20 12:12:39 -0300
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"F5+Q7JcAMK0vzoFqSthOOXrVfuBfzU+6n/f0IdqDapsH7xwzM2GiCFZpfxJ9JzPCFtVQ25ijIjPFrkozReqsrQ==", "article"=>{"title"=>"Compartir", "text"=>"Feature: Compartir en Rdes Sociales\r\n  En este caso de prueba se verificara que los botones compartir en redes sociales en páginas con distinto tipo de contenido esten funcionando.\r\n  La prueba consiste en probar que el href o url del ícono contenga la palabra buscada , queel estatus del botón sea (200),\r\n  que se este compartiendo el mismo texto del titulo y la descripcion y que la foto coincida con la noticia.\r\n  (en cada ícono de compartir ya sea facebook, twitter o otro igualmente)\r\n\r\n  Se verificaran los siguientes tipos de contenido: Noticia, Persona Buscada, Página, Página de libro, subasta, webform, Área"}, "commit"=>"Create Article"}
+Filter chain halted as #<Proc:0x00007f37f074c488@/home/apresta/.rvm/gems/ruby-2.5.1/gems/actionpack-5.2.0/lib/action_controller/metal/http_authentication.rb:72> rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2018-09-20 12:12:39 -0300
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"F5+Q7JcAMK0vzoFqSthOOXrVfuBfzU+6n/f0IdqDapsH7xwzM2GiCFZpfxJ9JzPCFtVQ25ijIjPFrkozReqsrQ==", "article"=>{"title"=>"Compartir", "text"=>"Feature: Compartir en Rdes Sociales\r\n  En este caso de prueba se verificara que los botones compartir en redes sociales en páginas con distinto tipo de contenido esten funcionando.\r\n  La prueba consiste en probar que el href o url del ícono contenga la palabra buscada , queel estatus del botón sea (200),\r\n  que se este compartiendo el mismo texto del titulo y la descripcion y que la foto coincida con la noticia.\r\n  (en cada ícono de compartir ya sea facebook, twitter o otro igualmente)\r\n\r\n  Se verificaran los siguientes tipos de contenido: Noticia, Persona Buscada, Página, Página de libro, subasta, webform, Área"}, "commit"=>"Create Article"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/articles_controller.rb:24
+  [1m[36mArticle Create (0.3ms)[0m  [1m[32mINSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Compartir"], ["text", "Feature: Compartir en Rdes Sociales\r\n  En este caso de prueba se verificara que los botones compartir en redes sociales en páginas con distinto tipo de contenido esten funcionando.\r\n  La prueba consiste en probar que el href o url del ícono contenga la palabra buscada , queel estatus del botón sea (200),\r\n  que se este compartiendo el mismo texto del titulo y la descripcion y que la foto coincida con la noticia.\r\n  (en cada ícono de compartir ya sea facebook, twitter o otro igualmente)\r\n\r\n  Se verificaran los siguientes tipos de contenido: Noticia, Persona Buscada, Página, Página de libro, subasta, webform, Área"], ["created_at", "2018-09-20 15:12:39.579396"], ["updated_at", "2018-09-20 15:12:39.579396"]]
+  ↳ app/controllers/articles_controller.rb:24
+  [1m[35m (12.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/articles_controller.rb:24
+Redirected to http://localhost:3000/articles/1
+Completed 302 Found in 17ms (ActiveRecord: 12.3ms)
+
+
+Started GET "/articles/1" for 127.0.0.1 at 2018-09-20 12:12:39 -0300
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:10
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?[0m  [["article_id", 1]]
+  ↳ app/views/articles/show.html.erb:12
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered comments/_form.html.erb (7.4ms)
+  Rendered articles/show.html.erb within layouts/application (20.8ms)
+Completed 200 OK in 33ms (Views: 30.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2018-09-20 12:12:45 -0300
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:10
+  Rendered articles/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 38ms (Views: 35.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2018-09-20 12:12:49 -0300
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (5.2ms)
+  Rendered articles/new.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 35ms (Views: 32.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2018-09-20 12:13:11 -0300
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mMb3jMQEAsnXGRVwLMUIToNw7qrS4J3lJCT7EK4utR6ItntTYGWQbK6+6wgbOnW173DAkRWO8Gx+fUUCMUdzKA==", "article"=>{"title"=>"Formularios", "text"=>"Feature: Formularios\r\n\r\n  En este caso de prueba se espera que los formularios aqui listados tengan una respuesta de petición correcta.\r\n\r\n  01  https://www.argentina.gob.ar/consultar-estado-pasaporte\r\n  02  https://www.argentina.gob.ar/consultar-donde-tenes-que-radicar-un-vehiculo-automotor\r\n  03  https://www.argentina.gob.ar/consultar-donde-esta-radicado-vehiculo-automotor\r\n  04  https://www.argentina.gob.ar/consultar-donde-radicar-un-automotor\r\n  05  https://www.argentina.gob.ar/defensadelconsumidor/formulario\r\n  06  https://www.argentina.gob.ar/hacer-el-seguimiento-de-reclamo-ante-defensa-del-consumidor\r\n  07  https://www.argentina.gob.ar/consultar-renovacion-dni\r\n  08  https://www.argentina.gob.ar/consulta-el-estado-de-tramite-del-dni\r\n  09  https://www.argentina.gob.ar/primerencuentroetica/formularioencuentro\r\n  10  https://www.argentina.gob.ar/expedientes\r\n  11  https://trabajoenred.argentina.gob.ar/#/contacto"}, "commit"=>"Create Article"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/articles_controller.rb:24
+  [1m[36mArticle Create (0.6ms)[0m  [1m[32mINSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Formularios"], ["text", "Feature: Formularios\r\n\r\n  En este caso de prueba se espera que los formularios aqui listados tengan una respuesta de petición correcta.\r\n\r\n  01  https://www.argentina.gob.ar/consultar-estado-pasaporte\r\n  02  https://www.argentina.gob.ar/consultar-donde-tenes-que-radicar-un-vehiculo-automotor\r\n  03  https://www.argentina.gob.ar/consultar-donde-esta-radicado-vehiculo-automotor\r\n  04  https://www.argentina.gob.ar/consultar-donde-radicar-un-automotor\r\n  05  https://www.argentina.gob.ar/defensadelconsumidor/formulario\r\n  06  https://www.argentina.gob.ar/hacer-el-seguimiento-de-reclamo-ante-defensa-del-consumidor\r\n  07  https://www.argentina.gob.ar/consultar-renovacion-dni\r\n  08  https://www.argentina.gob.ar/consulta-el-estado-de-tramite-del-dni\r\n  09  https://www.argentina.gob.ar/primerencuentroetica/formularioencuentro\r\n  10  https://www.argentina.gob.ar/expedientes\r\n  11  https://trabajoenred.argentina.gob.ar/#/contacto"], ["created_at", "2018-09-20 15:13:11.144826"], ["updated_at", "2018-09-20 15:13:11.144826"]]
+  ↳ app/controllers/articles_controller.rb:24
+  [1m[35m (13.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/articles_controller.rb:24
+Redirected to http://localhost:3000/articles/2
+Completed 302 Found in 26ms (ActiveRecord: 14.6ms)
+
+
+Started GET "/articles/2" for 127.0.0.1 at 2018-09-20 12:13:11 -0300
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:10
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?[0m  [["article_id", 2]]
+  ↳ app/views/articles/show.html.erb:12
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered comments/_form.html.erb (2.8ms)
+  Rendered articles/show.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 26ms (Views: 23.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2018-09-20 12:13:14 -0300
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:10
+  Rendered articles/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 35ms (Views: 32.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2018-09-20 12:13:17 -0300
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (4.1ms)
+  Rendered articles/new.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 38ms (Views: 34.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2018-09-20 12:13:30 -0300
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DJnE+QQLdHqjisbb+Qxo/ibpe0PlksOEo/Qqfp+cQxwc6UgmoGrm39otOKPO8xUFSulVeCL8rg35rZRsAPWFKg==", "article"=>{"title"=>"Home", "text"=>"Feature: Pagina principal\r\n  Este caso de prueba consiste en la verificacion de la home de Argentina.gob.ar www.argentina.gob.ar\r\n  Se verificara el funcionamiento del buscador tanto de la pagina principal como en cualquier otra pagina que no sea la principal\r\n  Se verificara que todos los links de la página principal funcionen"}, "commit"=>"Create Article"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/articles_controller.rb:24
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/articles_controller.rb:24
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (1.7ms)
+  Rendered articles/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 22ms (Views: 19.3ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2018-09-20 12:13:40 -0300
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"j3v11A7Ghon7sexPmU/tOJ1LoLeRgpnfjkClurrZM8iOnG0vr6CfhKbP7fOCQnB5YTsWdGpHoTiNXl+cjNEFcQ==", "article"=>{"title"=>"Home.", "text"=>"Feature: Pagina principal\r\n  Este caso de prueba consiste en la verificacion de la home de Argentina.gob.ar www.argentina.gob.ar\r\n  Se verificara el funcionamiento del buscador tanto de la pagina principal como en cualquier otra pagina que no sea la principal\r\n  Se verificara que todos los links de la página principal funcionen"}, "commit"=>"Create Article"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/articles_controller.rb:24
+  [1m[36mArticle Create (2.1ms)[0m  [1m[32mINSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Home."], ["text", "Feature: Pagina principal\r\n  Este caso de prueba consiste en la verificacion de la home de Argentina.gob.ar www.argentina.gob.ar\r\n  Se verificara el funcionamiento del buscador tanto de la pagina principal como en cualquier otra pagina que no sea la principal\r\n  Se verificara que todos los links de la página principal funcionen"], ["created_at", "2018-09-20 15:13:40.771926"], ["updated_at", "2018-09-20 15:13:40.771926"]]
+  ↳ app/controllers/articles_controller.rb:24
+  [1m[35m (13.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/articles_controller.rb:24
+Redirected to http://localhost:3000/articles/3
+Completed 302 Found in 25ms (ActiveRecord: 16.2ms)
+
+
+Started GET "/articles/3" for 127.0.0.1 at 2018-09-20 12:13:40 -0300
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:10
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?[0m  [["article_id", 3]]
+  ↳ app/views/articles/show.html.erb:12
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered comments/_form.html.erb (1.9ms)
+  Rendered articles/show.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 19ms (Views: 16.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2018-09-20 12:13:43 -0300
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:10
+  Rendered articles/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 30ms (Views: 27.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2018-09-20 12:13:54 -0300
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (1.1ms)
+  Rendered articles/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2018-09-20 12:14:25 -0300
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JL6BVVr2Gr7l42xaA+ph4IOC4XV81uOgOYEF2IkTpG00zg2K/peIG5xEkiI0FRwb74LPTru4jilj2LvKFnpiWw==", "article"=>{"title"=>"Listado Ordenado por fechas", "text"=>"Feature:  Listado Ordenado por fechas\r\n  En este caso de prueba se verificara que el listado Noticias se muestre ordenado por fecha verificando las primeras 4 a 8 noticias, tambien seleccionando VER TODAS. Las noticias deben estar ordenadas mostrando primero la mas reciente. Se verificaran los listados de las páginas\r\n\r\n  1-  https://www.argentina.gob.ar/finanzas\r\n  2-  https://www.argentina.gob.ar/vuce/novedades\r\n  3-  https://www.argentina.gob.ar/anmat\r\n  4-  https://www.argentina.gob.ar/salud\r\n  5-  https://www.argentina.gob.ar/hacienda\r\n  6-  https://www.argentina.gob.ar/politicassociales\r\n  7-  https://www.argentina.gob.ar/transporte"}, "commit"=>"Create Article"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/articles_controller.rb:24
+  [1m[36mArticle Create (0.8ms)[0m  [1m[32mINSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Listado Ordenado por fechas"], ["text", "Feature:  Listado Ordenado por fechas\r\n  En este caso de prueba se verificara que el listado Noticias se muestre ordenado por fecha verificando las primeras 4 a 8 noticias, tambien seleccionando VER TODAS. Las noticias deben estar ordenadas mostrando primero la mas reciente. Se verificaran los listados de las páginas\r\n\r\n  1-  https://www.argentina.gob.ar/finanzas\r\n  2-  https://www.argentina.gob.ar/vuce/novedades\r\n  3-  https://www.argentina.gob.ar/anmat\r\n  4-  https://www.argentina.gob.ar/salud\r\n  5-  https://www.argentina.gob.ar/hacienda\r\n  6-  https://www.argentina.gob.ar/politicassociales\r\n  7-  https://www.argentina.gob.ar/transporte"], ["created_at", "2018-09-20 15:14:25.977829"], ["updated_at", "2018-09-20 15:14:25.977829"]]
+  ↳ app/controllers/articles_controller.rb:24
+  [1m[35m (13.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/articles_controller.rb:24
+Redirected to http://localhost:3000/articles/4
+Completed 302 Found in 26ms (ActiveRecord: 14.8ms)
+
+
+Started GET "/articles/4" for 127.0.0.1 at 2018-09-20 12:14:26 -0300
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:10
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?[0m  [["article_id", 4]]
+  ↳ app/views/articles/show.html.erb:12
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered comments/_form.html.erb (2.5ms)
+  Rendered articles/show.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 24ms (Views: 20.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2018-09-20 12:14:28 -0300
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:10
+  Rendered articles/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 14ms (Views: 13.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2018-09-20 12:15:13 -0300
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (1.4ms)
+  Rendered articles/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 12ms (Views: 11.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2018-09-20 12:15:21 -0300
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Nwn/9FQ0qR+vhYBhqJ0/zfl7yx+hM4pL0wucqHXxOvMneXMr8FU7utYifhmfYkI2lXvlJGZd58KJUiK66pj8xQ==", "article"=>{"title"=>"Login redes sociales", "text"=>"Feature: Login redes sociales\r\n  Ingresar a todas las redes sociales con usuario test"}, "commit"=>"Create Article"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/articles_controller.rb:24
+  [1m[36mArticle Create (0.6ms)[0m  [1m[32mINSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Login redes sociales"], ["text", "Feature: Login redes sociales\r\n  Ingresar a todas las redes sociales con usuario test"], ["created_at", "2018-09-20 15:15:21.767994"], ["updated_at", "2018-09-20 15:15:21.767994"]]
+  ↳ app/controllers/articles_controller.rb:24
+  [1m[35m (19.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/articles_controller.rb:24
+Redirected to http://localhost:3000/articles/5
+Completed 302 Found in 32ms (ActiveRecord: 20.3ms)
+
+
+Started GET "/articles/5" for 127.0.0.1 at 2018-09-20 12:15:21 -0300
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:10
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?[0m  [["article_id", 5]]
+  ↳ app/views/articles/show.html.erb:12
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered comments/_form.html.erb (2.8ms)
+  Rendered articles/show.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 25ms (Views: 23.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2018-09-20 12:15:23 -0300
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:10
+  Rendered articles/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 37ms (Views: 35.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2018-09-20 12:15:38 -0300
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (1.3ms)
+  Rendered articles/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 14ms (Views: 13.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2018-09-20 12:15:46 -0300
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pnXfKC/w0TfSDeRJmcvaPLsejX/qXXtIeOvl1vFihbO2BVP3i5FDkquqGjGuNKfH1x6jRC0zFsEislvEbgtDhQ==", "article"=>{"title"=>"Mas Visitados", "text"=>"Feature: Mas Visitados\r\n  En este caso de prueba se espera que las páginas y trámites aqui listados tengan una respuesta de petición correcta.\r\n\r\n  Trámites más visitados\r\n        01-   https://www.argentina.gob.ar/cuando-y-donde-cobro-en-anses\r\n        02-   https://www.argentina.gob.ar/seguir-el-estado-de-tramite-del-dni\r\n        03-   https://www.argentina.gob.ar/solicitar-la-tarifa-social-sube\r\n        04-   https://www.argentina.gob.ar/inscribirse-en-becas-progresar\r\n        05-   https://www.argentina.gob.ar/renovar-el-dni\r\n        06-   https://www.argentina.gob.ar/solicitar-la-tarifa-social-sube\r\n        07-   https://www.argentina.gob.ar/obtener-tu-constancia-de-cuil\r\n        08-   https://www.argentina.gob.ar/consultar-el-calendario-de-pagos-de-anses\r\n        09-   https://www.argentina.gob.ar/obtener-certificacion-negativa-de-anses\r\n        10-   https://www.argentina.gob.ar/dni-en-24-horas-y-expres-para-argentinos\r\n\r\n  Páginas más visitadas\r\n        01-   https://www.argentina.gob.ar/sube\r\n        02-   https://www.argentina.gob.ar/becasprogresar\r\n        03-   https://www.argentina.gob.ar/educacion\r\n        04-   https://www.argentina.gob.ar/consejos-para-el-invierno\r\n        05-   https://www.argentina.gob.ar/cuando-y-donde-cobro-en-anses\r\n        06-   https://www.argentina.gob.ar/interior/feriados\r\n        07-   https://www.argentina.gob.ar/redsube\r\n        08-   https://www.argentina.gob.ar/becasprogresar/educacionsuperior\r\n        09-   https://www.argentina.gob.ar/dni\r\n        10-   https://www.argentina.gob.ar/seguir-el-estado-de-tramite-del-dni\r\n        11-   https://www.argentina.gob.ar/elestadoentubarrio/buenosaires\r\n        12-   https://www.argentina.gob.ar/solicitar-la-tarifa-social-sube\r\n        13-   https://www.argentina.gob.ar/cnrt\r\n        14-   https://www.argentina.gob.ar/inscribirse-en-becas-progresar\r\n        15-   https://www.argentina.gob.ar/renovar-el-dni\r\n        16-   https://www.argentina.gob.ar/solicitar-la-tarifa-social-sube?\r\n        17-   https://www.argentina.gob.ar/mi-sube\r\n        18-   https://www.argentina.gob.ar/dni-para-argentinos-residentes-en-el-pais\r\n        19-   https://www.argentina.gob.ar/becasprogresar/novedades-adjudicados\r\n        20-   https://www.argentina.gob.ar/interior\r\n\r\n  Otros:\r\n\r\n        01-   https://www.argentina.gob.ar/consultar-los-datos-de-la-licencia-nacional-de-conducir\r\n        02-   https://www.argentina.gob.ar/buscar\r\n        03-   https://www.argentina.gob.ar/seguir-el-estado-de-tramite-del-dni\r\n        04-   https://www.argentina.gob.ar/consultar-por-cambio-de-dni\r\n        05-   https://www.argentina.gob.ar/postulaciones\r\n        06-   https://www.argentina.gob.ar/hacienda\r\n        07-   https://www.argentina.gob.ar/finanzas\r\n        08-   https://www.argentina.gob.ar/donar-organos/formulario"}, "commit"=>"Create Article"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/articles_controller.rb:24
+  [1m[36mArticle Create (0.6ms)[0m  [1m[32mINSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Mas Visitados"], ["text", "Feature: Mas Visitados\r\n  En este caso de prueba se espera que las páginas y trámites aqui listados tengan una respuesta de petición correcta.\r\n\r\n  Trámites más visitados\r\n        01-   https://www.argentina.gob.ar/cuando-y-donde-cobro-en-anses\r\n        02-   https://www.argentina.gob.ar/seguir-el-estado-de-tramite-del-dni\r\n        03-   https://www.argentina.gob.ar/solicitar-la-tarifa-social-sube\r\n        04-   https://www.argentina.gob.ar/inscribirse-en-becas-progresar\r\n        05-   https://www.argentina.gob.ar/renovar-el-dni\r\n        06-   https://www.argentina.gob.ar/solicitar-la-tarifa-social-sube\r\n        07-   https://www.argentina.gob.ar/obtener-tu-constancia-de-cuil\r\n        08-   https://www.argentina.gob.ar/consultar-el-calendario-de-pagos-de-anses\r\n        09-   https://www.argentina.gob.ar/obtener-certificacion-negativa-de-anses\r\n        10-   https://www.argentina.gob.ar/dni-en-24-horas-y-expres-para-argentinos\r\n\r\n  Páginas más visitadas\r\n        01-   https://www.argentina.gob.ar/sube\r\n        02-   https://www.argentina.gob.ar/becasprogresar\r\n        03-   https://www.argentina.gob.ar/educacion\r\n        04-   https://www.argentina.gob.ar/consejos-para-el-invierno\r\n        05-   https://www.argentina.gob.ar/cuando-y-donde-cobro-en-anses\r\n        06-   https://www.argentina.gob.ar/interior/feriados\r\n        07-   https://www.argentina.gob.ar/redsube\r\n        08-   https://www.argentina.gob.ar/becasprogresar/educacionsuperior\r\n        09-   https://www.argentina.gob.ar/dni\r\n        10-   https://www.argentina.gob.ar/seguir-el-estado-de-tramite-del-dni\r\n        11-   https://www.argentina.gob.ar/elestadoentubarrio/buenosaires\r\n        12-   https://www.argentina.gob.ar/solicitar-la-tarifa-social-sube\r\n        13-   https://www.argentina.gob.ar/cnrt\r\n        14-   https://www.argentina.gob.ar/inscribirse-en-becas-progresar\r\n        15-   https://www.argentina.gob.ar/renovar-el-dni\r\n        16-   https://www.argentina.gob.ar/solicitar-la-tarifa-social-sube?\r\n        17-   https://www.argentina.gob.ar/mi-sube\r\n        18-   https://www.argentina.gob.ar/dni-para-argentinos-residentes-en-el-pais\r\n        19-   https://www.argentina.gob.ar/becasprogresar/novedades-adjudicados\r\n        20-   https://www.argentina.gob.ar/interior\r\n\r\n  Otros:\r\n\r\n        01-   https://www.argentina.gob.ar/consultar-los-datos-de-la-licencia-nacional-de-conducir\r\n        02-   https://www.argentina.gob.ar/buscar\r\n        03-   https://www.argentina.gob.ar/seguir-el-estado-de-tramite-del-dni\r\n        04-   https://www.argentina.gob.ar/consultar-por-cambio-de-dni\r\n        05-   https://www.argentina.gob.ar/postulaciones\r\n        06-   https://www.argentina.gob.ar/hacienda\r\n        07-   https://www.argentina.gob.ar/finanzas\r\n        08-   https://www.argentina.gob.ar/donar-organos/formulario"], ["created_at", "2018-09-20 15:15:46.673829"], ["updated_at", "2018-09-20 15:15:46.673829"]]
+  ↳ app/controllers/articles_controller.rb:24
+  [1m[35m (16.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/articles_controller.rb:24
+Redirected to http://localhost:3000/articles/6
+Completed 302 Found in 27ms (ActiveRecord: 16.9ms)
+
+
+Started GET "/articles/6" for 127.0.0.1 at 2018-09-20 12:15:46 -0300
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:10
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?[0m  [["article_id", 6]]
+  ↳ app/views/articles/show.html.erb:12
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered comments/_form.html.erb (2.9ms)
+  Rendered articles/show.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 26ms (Views: 22.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2018-09-20 12:15:49 -0300
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:10
+  Rendered articles/index.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 30ms (Views: 26.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2018-09-20 12:16:00 -0300
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (5.6ms)
+  Rendered articles/new.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 39ms (Views: 35.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2018-09-20 12:16:17 -0300
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Rp/XlWk/foU0W/0lgYQ+n1KiErR8E1B75vNXnDhnkDpW71tKzV7sIE38A122e0NkPqI8j7t9PfK8qumOpw5WDA==", "article"=>{"title"=>"Organismos", "text"=>"Feature: Organismos\r\n  En este caso de prueba se debe verificar que al ingresar a https://www.argentina.gob.ar/organismos estan  todos estos organismos y ministerios aqui listados y sus links funcionan\r\n  Poder Ejecutivo Nacional (debe tener 4 organismos)\r\n  Casa Rosada,  Secretaría General, Secretaría Legal y Técnica, Sedronar\r\n\r\n  Jefatura de Gabinete (debe tener 9 organismos)\r\n  Secretaría de Relaciones Políticas y Parlamentarias, Secretaría de Asuntos Estratégicos,  Secretaría de Comunicación Pública,  Secretaría de Coordinación Interministerial, Secretaría de Coordinación de Políticas Públicas, Sistema Federal de Medios y Contenidos Públicos,  Agencia de Administración de Bienes del Estado,  Unidad Plan Belgrano,  Dirección Nacional de Inversión Pública.\r\n\r\n  Ministerios (deben existir 19 ministerios)\r\n  Ministerio de Agroindustria,  Ministerio de Ambiente y Desarrollo Sustentable,  Ministerio de Ciencia, Tecnología e Innovación Productiva,  Ministerio de Cultura,  Ministerio de Defensa,  Ministerio de Desarrollo Social,  Ministerio de Energía,  Ministerio de Hacienda,  Ministerio del Interior, Obras Públicas y Vivienda,  Ministerio de Educación,  Ministerio de Justicia y Derechos Humanos,  Ministerio de Modernización,  Ministerio de Producción,  Ministerio de Relaciones Exteriores y Culto,  Ministerio de Salud,  Ministerio de Seguridad,  Ministerio de Trabajo, Empleo y Seguridad Social,  Ministerio de Transporte,  Ministerio de Turismo.\r\n\r\n  Poder Judicial de la Nación (deben tener 3 organismos)\r\n  Corte Suprema de Justicia de la Nación,  Ministerio Público Fiscal – Procuración General de la Nación,  Ministerio Público de la Defensa.\r\n\r\n  Poder Legislativo Nacional (deben tener 3 organismos)\r\n  Congreso de la Nación Argentina,  Honorable Senado de la Nación,  Honorable Cámara de Diputados de la Nación."}, "commit"=>"Create Article"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/articles_controller.rb:24
+  [1m[36mArticle Create (0.5ms)[0m  [1m[32mINSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Organismos"], ["text", "Feature: Organismos\r\n  En este caso de prueba se debe verificar que al ingresar a https://www.argentina.gob.ar/organismos estan  todos estos organismos y ministerios aqui listados y sus links funcionan\r\n  Poder Ejecutivo Nacional (debe tener 4 organismos)\r\n  Casa Rosada,  Secretaría General, Secretaría Legal y Técnica, Sedronar\r\n\r\n  Jefatura de Gabinete (debe tener 9 organismos)\r\n  Secretaría de Relaciones Políticas y Parlamentarias, Secretaría de Asuntos Estratégicos,  Secretaría de Comunicación Pública,  Secretaría de Coordinación Interministerial, Secretaría de Coordinación de Políticas Públicas, Sistema Federal de Medios y Contenidos Públicos,  Agencia de Administración de Bienes del Estado,  Unidad Plan Belgrano,  Dirección Nacional de Inversión Pública.\r\n\r\n  Ministerios (deben existir 19 ministerios)\r\n  Ministerio de Agroindustria,  Ministerio de Ambiente y Desarrollo Sustentable,  Ministerio de Ciencia, Tecnología e Innovación Productiva,  Ministerio de Cultura,  Ministerio de Defensa,  Ministerio de Desarrollo Social,  Ministerio de Energía,  Ministerio de Hacienda,  Ministerio del Interior, Obras Públicas y Vivienda,  Ministerio de Educación,  Ministerio de Justicia y Derechos Humanos,  Ministerio de Modernización,  Ministerio de Producción,  Ministerio de Relaciones Exteriores y Culto,  Ministerio de Salud,  Ministerio de Seguridad,  Ministerio de Trabajo, Empleo y Seguridad Social,  Ministerio de Transporte,  Ministerio de Turismo.\r\n\r\n  Poder Judicial de la Nación (deben tener 3 organismos)\r\n  Corte Suprema de Justicia de la Nación,  Ministerio Público Fiscal – Procuración General de la Nación,  Ministerio Público de la Defensa.\r\n\r\n  Poder Legislativo Nacional (deben tener 3 organismos)\r\n  Congreso de la Nación Argentina,  Honorable Senado de la Nación,  Honorable Cámara de Diputados de la Nación."], ["created_at", "2018-09-20 15:16:17.937461"], ["updated_at", "2018-09-20 15:16:17.937461"]]
+  ↳ app/controllers/articles_controller.rb:24
+  [1m[35m (21.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/articles_controller.rb:24
+Redirected to http://localhost:3000/articles/7
+Completed 302 Found in 32ms (ActiveRecord: 22.2ms)
+
+
+Started GET "/articles/7" for 127.0.0.1 at 2018-09-20 12:16:17 -0300
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:10
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?[0m  [["article_id", 7]]
+  ↳ app/views/articles/show.html.erb:12
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered comments/_form.html.erb (3.2ms)
+  Rendered articles/show.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 28ms (Views: 24.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2018-09-20 12:16:19 -0300
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:10
+  Rendered articles/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 33ms (Views: 30.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2018-09-20 12:16:21 -0300
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (3.8ms)
+  Rendered articles/new.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 32ms (Views: 30.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2018-09-20 12:16:35 -0300
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rhR4IbiquLqKXkbVRf4KYdl4xcJ2BgvSqzA0s5ZvdNq+ZPT+HMsqH/P5uK1yAXeatXjr+bFoZlvxaYqhCQay7A==", "article"=>{"title"=>"Sube", "text"=>"Feature: sube\r\n  Este caso de prueba consiste en verificar la pagina https://www.argentina.gob.ar/redsube\r\n\r\n  Verificar que la página https://www.argentina.gob.ar/redsube (que tenga status 200)\r\n  Verificar que exista el acceso al formulario  Registrá tu tarjeta (y que estén los campos y el botón enviar)\r\n  El link Ingresá al simulador lleve a https://www.argentina.gob.ar/redsube/simulador ( y que la calculadora funcione)"}, "commit"=>"Create Article"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/articles_controller.rb:24
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/articles_controller.rb:24
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (4.5ms)
+  Rendered articles/new.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 36ms (Views: 30.0ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2018-09-20 12:16:41 -0300
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"x0klpyp47CPw8ib8/knmAhXg4jPejvr7amXOachPN8bGrr1cix71Lq2MJ0DlRHtD6ZBU8CVLwhxpezRP/kcBfw==", "article"=>{"title"=>"Sube..", "text"=>"Feature: sube\r\n  Este caso de prueba consiste en verificar la pagina https://www.argentina.gob.ar/redsube\r\n\r\n  Verificar que la página https://www.argentina.gob.ar/redsube (que tenga status 200)\r\n  Verificar que exista el acceso al formulario  Registrá tu tarjeta (y que estén los campos y el botón enviar)\r\n  El link Ingresá al simulador lleve a https://www.argentina.gob.ar/redsube/simulador ( y que la calculadora funcione)"}, "commit"=>"Create Article"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/articles_controller.rb:24
+  [1m[36mArticle Create (0.5ms)[0m  [1m[32mINSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Sube.."], ["text", "Feature: sube\r\n  Este caso de prueba consiste en verificar la pagina https://www.argentina.gob.ar/redsube\r\n\r\n  Verificar que la página https://www.argentina.gob.ar/redsube (que tenga status 200)\r\n  Verificar que exista el acceso al formulario  Registrá tu tarjeta (y que estén los campos y el botón enviar)\r\n  El link Ingresá al simulador lleve a https://www.argentina.gob.ar/redsube/simulador ( y que la calculadora funcione)"], ["created_at", "2018-09-20 15:16:41.312780"], ["updated_at", "2018-09-20 15:16:41.312780"]]
+  ↳ app/controllers/articles_controller.rb:24
+  [1m[35m (13.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/articles_controller.rb:24
+Redirected to http://localhost:3000/articles/8
+Completed 302 Found in 23ms (ActiveRecord: 14.4ms)
+
+
+Started GET "/articles/8" for 127.0.0.1 at 2018-09-20 12:16:41 -0300
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:10
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?[0m  [["article_id", 8]]
+  ↳ app/views/articles/show.html.erb:12
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered comments/_form.html.erb (2.2ms)
+  Rendered articles/show.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 22ms (Views: 19.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2018-09-20 12:16:42 -0300
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:10
+  Rendered articles/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 37ms (Views: 34.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2018-09-20 12:16:50 -0300
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (4.1ms)
+  Rendered articles/new.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 39ms (Views: 36.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2018-09-20 12:17:05 -0300
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EqckPGpyI8y2V0HQZJt7fwCceJhRVn05ZHSpnU/zoT0C16jjzhOxac/wv6hTZAaEbJxWo5Y4ELA+LReP0JpnCw==", "article"=>{"title"=>"Turnos", "text"=>"Feature: Turno respuesta\r\n  Se ingresara a https://www.argentina.gob.ar/turnos\r\n\r\n  verificara que se puede completar provincia localidad la información para generar un turno\r\n  que el sistema funcione\r\n  que el turno corresponda al tipo de tramite\r\n"}, "commit"=>"Create Article"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/articles_controller.rb:24
+  [1m[36mArticle Create (0.7ms)[0m  [1m[32mINSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Turnos"], ["text", "Feature: Turno respuesta\r\n  Se ingresara a https://www.argentina.gob.ar/turnos\r\n\r\n  verificara que se puede completar provincia localidad la información para generar un turno\r\n  que el sistema funcione\r\n  que el turno corresponda al tipo de tramite\r\n"], ["created_at", "2018-09-20 15:17:05.484525"], ["updated_at", "2018-09-20 15:17:05.484525"]]
+  ↳ app/controllers/articles_controller.rb:24
+  [1m[35m (13.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/articles_controller.rb:24
+Redirected to http://localhost:3000/articles/9
+Completed 302 Found in 21ms (ActiveRecord: 14.4ms)
+
+
+Started GET "/articles/9" for 127.0.0.1 at 2018-09-20 12:17:05 -0300
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:10
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?[0m  [["article_id", 9]]
+  ↳ app/views/articles/show.html.erb:12
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered comments/_form.html.erb (3.5ms)
+  Rendered articles/show.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 26ms (Views: 22.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2018-09-20 12:17:07 -0300
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:10
+  Rendered articles/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 33ms (Views: 30.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/articles/1" for 127.0.0.1 at 2018-09-20 12:20:20 -0300
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:10
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?[0m  [["article_id", 1]]
+  ↳ app/views/articles/show.html.erb:12
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered comments/_form.html.erb (5.6ms)
+  Rendered articles/show.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 36ms (Views: 32.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2018-09-20 12:20:24 -0300
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:10
+  Rendered articles/index.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 33ms (Views: 30.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-20 13:02:03 -0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/apresta/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 136ms (Views: 132.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2018-09-20 13:02:06 -0300
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:10
+  Rendered articles/index.html.erb within layouts/application (15.7ms)
+Completed 200 OK in 41ms (Views: 29.9ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2018-09-20 13:11:31 -0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/apresta/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:10
+  Rendered articles/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 140ms (Views: 134.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-20 13:11:37 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 21ms (Views: 18.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-20 14:00:18 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 26ms (Views: 24.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-20 14:24:50 -0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/apresta/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 123ms (Views: 119.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2018-09-20 14:27:01 -0300
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:10
+  Rendered articles/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 16ms (Views: 13.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/articles/1" for 127.0.0.1 at 2018-09-20 14:27:25 -0300
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:10
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?[0m  [["article_id", 1]]
+  ↳ app/views/articles/show.html.erb:12
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered comments/_form.html.erb (13.7ms)
+  Rendered articles/show.html.erb within layouts/application (27.5ms)
+Completed 200 OK in 45ms (Views: 39.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/articles/1/edit" for 127.0.0.1 at 2018-09-20 14:27:45 -0300
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"1"}
+Filter chain halted as #<Proc:0x00007f9509fab720@/home/apresta/.rvm/gems/ruby-2.5.1/gems/actionpack-5.2.0/lib/action_controller/metal/http_authentication.rb:72> rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/articles/1/edit" for 127.0.0.1 at 2018-09-20 14:27:49 -0300
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:18
+  Rendering articles/edit.html.erb within layouts/application
+  Rendered articles/_form.html.erb (2.0ms)
+  Rendered articles/edit.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 27ms (Views: 23.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2018-09-20 14:27:52 -0300
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:10
+  Rendered articles/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 35ms (Views: 33.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-20 14:28:06 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2018-09-20 14:31:32 -0300
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:10
+  Rendered articles/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 31ms (Views: 28.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2018-09-20 14:35:46 -0300
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:10
+  Rendered articles/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 13ms (Views: 12.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2018-09-20 14:58:05 -0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/apresta/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:10
+  Rendered articles/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 96ms (Views: 89.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-20 15:01:36 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 15ms (Views: 14.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2018-09-20 15:04:56 -0300
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:10
+  Rendered articles/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 31ms (Views: 29.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2018-09-20 15:04:59 -0300
+Processing by ArticlesController#new as HTML
+Filter chain halted as #<Proc:0x00007fc7889cc4d8@/home/apresta/.rvm/gems/ruby-2.5.1/gems/actionpack-5.2.0/lib/action_controller/metal/http_authentication.rb:72> rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2018-09-20 15:04:59 -0300
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (25.2ms)
+  Rendered articles/new.html.erb within layouts/application (27.3ms)
+Completed 200 OK in 49ms (Views: 48.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2018-09-20 15:05:01 -0300
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:10
+  Rendered articles/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 35ms (Views: 32.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/articles/1" for 127.0.0.1 at 2018-09-20 15:05:28 -0300
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:10
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?[0m  [["article_id", 1]]
+  ↳ app/views/articles/show.html.erb:12
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered comments/_form.html.erb (8.6ms)
+  Rendered articles/show.html.erb within layouts/application (23.5ms)
+Completed 200 OK in 44ms (Views: 36.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2018-09-20 15:05:33 -0300
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (3.8ms)
+  Rendered articles/new.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 32ms (Views: 29.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2018-09-20 15:05:36 -0300
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8ZCkQ7Do8IRBv50zWLeqbzfpuRoOL4N0RFWkmQbo0R7WhxfNYVjPl1uwXqMxT+oYLH3YtOLeEn9zYVDSKRWk4Q==", "article"=>{"title"=>"xczxcvzxcvzxv", "text"=>"xvxzcvxczv"}, "commit"=>"Create Article"}
+Filter chain halted as #<Proc:0x00007fc7889cc4d8@/home/apresta/.rvm/gems/ruby-2.5.1/gems/actionpack-5.2.0/lib/action_controller/metal/http_authentication.rb:72> rendered or redirected
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2018-09-20 15:05:36 -0300
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8ZCkQ7Do8IRBv50zWLeqbzfpuRoOL4N0RFWkmQbo0R7WhxfNYVjPl1uwXqMxT+oYLH3YtOLeEn9zYVDSKRWk4Q==", "article"=>{"title"=>"xczxcvzxcvzxv", "text"=>"xvxzcvxczv"}, "commit"=>"Create Article"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/articles_controller.rb:24
+  [1m[36mArticle Create (0.2ms)[0m  [1m[32mINSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "xczxcvzxcvzxv"], ["text", "xvxzcvxczv"], ["created_at", "2018-09-20 18:05:36.878791"], ["updated_at", "2018-09-20 18:05:36.878791"]]
+  ↳ app/controllers/articles_controller.rb:24
+  [1m[35m (11.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/articles_controller.rb:24
+Redirected to http://localhost:3000/articles/10
+Completed 302 Found in 15ms (ActiveRecord: 11.9ms)
+
+
+Started GET "/articles/10" for 127.0.0.1 at 2018-09-20 15:05:36 -0300
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:10
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?[0m  [["article_id", 10]]
+  ↳ app/views/articles/show.html.erb:12
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered comments/_form.html.erb (1.3ms)
+  Rendered articles/show.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 13ms (Views: 11.9ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/articles/10/comments" for 127.0.0.1 at 2018-09-20 15:05:38 -0300
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qGi6HXjRLIozZCd0t1KhNz3WqaUnAXRTbPOJZX1TQV972LLhJM3a4JcYr+Pc+pX+Nd8aUOqyp18JGgEId94niQ==", "comment"=>{"commenter"=>"", "body"=>""}, "commit"=>"Create Comment", "article_id"=>"10"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/comments_controller.rb:6
+  [1m[36mComment Create (0.8ms)[0m  [1m[32mINSERT INTO "comments" ("commenter", "body", "article_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["commenter", ""], ["body", ""], ["article_id", 10], ["created_at", "2018-09-20 18:05:39.005439"], ["updated_at", "2018-09-20 18:05:39.005439"]]
+  ↳ app/controllers/comments_controller.rb:6
+  [1m[35m (13.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/comments_controller.rb:6
+Redirected to http://localhost:3000/articles/10
+Completed 302 Found in 19ms (ActiveRecord: 14.3ms)
+
+
+Started GET "/articles/10" for 127.0.0.1 at 2018-09-20 15:05:39 -0300
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:10
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?[0m  [["article_id", 10]]
+  ↳ app/views/articles/show.html.erb:12
+  Rendered collection of comments/_comment.html.erb [1 times] (0.6ms)
+  Rendered comments/_form.html.erb (1.8ms)
+  Rendered articles/show.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 18ms (Views: 16.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2018-09-20 15:05:40 -0300
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.7ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:10
+  Rendered articles/index.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 36ms (Views: 32.5ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/articles/10" for 127.0.0.1 at 2018-09-20 15:05:47 -0300
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"nntDt0zOpjpvtylpIlOQfewycsui0shRPUrTZ9PXm89Ny0tLENJQUMvLof5J+6S05DvBPm9hG11Yo1sK2Vr9GQ==", "id"=>"10"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:42
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/articles_controller.rb:43
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?[0m  [["article_id", 10]]
+  ↳ app/controllers/articles_controller.rb:43
+  [1m[36mComment Destroy (0.5ms)[0m  [1m[31mDELETE FROM "comments" WHERE "comments"."id" = ?[0m  [["id", 1]]
+  ↳ app/controllers/articles_controller.rb:43
+  [1m[36mArticle Destroy (0.1ms)[0m  [1m[31mDELETE FROM "articles" WHERE "articles"."id" = ?[0m  [["id", 10]]
+  ↳ app/controllers/articles_controller.rb:43
+  [1m[35m (13.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/articles_controller.rb:43
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 19ms (ActiveRecord: 14.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2018-09-20 15:05:47 -0300
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:10
+  Rendered articles/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 12ms (Views: 10.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2018-09-20 15:05:56 -0300
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:10
+  Rendered articles/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 19ms (Views: 17.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2018-09-20 15:05:56 -0300
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:10
+  Rendered articles/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 16ms (Views: 15.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2018-09-20 15:05:56 -0300
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:10
+  Rendered articles/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 19ms (Views: 18.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2018-09-20 15:05:56 -0300
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:10
+  Rendered articles/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2018-09-20 15:06:01 -0300
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (1.1ms)
+  Rendered articles/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 12ms (Views: 11.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2018-09-20 15:21:05 -0300
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:10
+  Rendered articles/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 23ms (Views: 20.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-21 13:28:59 -0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/apresta/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 110ms (Views: 106.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2018-09-21 13:29:02 -0300
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:10
+  Rendered articles/index.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 31ms (Views: 22.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2018-09-21 13:29:06 -0300
+Processing by ArticlesController#new as HTML
+Filter chain halted as #<Proc:0x00007fdf6c037750@/home/apresta/.rvm/gems/ruby-2.5.1/gems/actionpack-5.2.0/lib/action_controller/metal/http_authentication.rb:72> rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2018-09-21 13:29:08 -0300
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (5.4ms)
+  Rendered articles/new.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 33ms (Views: 32.6ms | ActiveRecord: 0.0ms)
+
+

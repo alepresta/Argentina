@@ -1,0 +1,21 @@
+<h1>Lista de Casos de Prueba</h1>
+<%= link_to 'Nuevo Caso de Prueba', new_article_path %>
+<table>
+  <tr>
+    <th>Titulo</th>
+    <th>Texto</th>
+    <th colspan="3"></th>
+  </tr>
+
+  <% @articles.each do |article| %>
+    <tr>
+      <td><%= article.title %></td>
+      <td><%= article.text %></td>
+      <td><%= link_to 'Ver Casos prueba', article_path(article) %></td>
+      <td><%= link_to 'Editar Casos Prueba', edit_article_path(article) %></td>
+      <td><%= link_to 'Eliminar Casos Pueba', article_path(article),
+                      method: :delete,
+                      data: { confirm: '¿Esta usted seguro?' } %></td>
+    </tr>
+  <% end %>
+</table>

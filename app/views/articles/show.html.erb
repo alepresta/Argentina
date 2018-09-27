@@ -1,0 +1,18 @@
+<p>
+  <strong>Titulo:</strong>
+  <%= @article.title %>
+</p>
+
+<p>
+  <strong>Texto:</strong>
+  <%= @article.text %>
+</p>
+
+<h2>Commentarios</h2>
+<%= render @article.comments %>
+
+<h2>Agregar comentarios:</h2>
+<%= render 'comments/form' %>
+
+<%= link_to 'Editar', edit_article_path(@article) %> |
+<%= link_to 'Volver', articles_path %>

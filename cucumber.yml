@@ -1,0 +1,31 @@
+
+default: -p html report_name=all
+html: -f html -o ../../test/report/reporte.html --format pretty
+menu: -t @menu -p html report_name=menu
+home: -t @home -p html report_name=home
+turnos: -t @turnos -p html report_name=turnos
+compartir: -t @compartir -p html report_name=compartir
+login_facebook: -t @login_facebook -p html report_name=login_facebook
+login_google: -t @login_google -p html report_name=login_google
+login_twitter: -t @login_twitter -p html report_name=login_twitter
+login_instagram: -t @login_instagram -p html report_name=login_instagram
+login_youtube: -t @login_youtube -p html report_name=login_youtube
+login: -t @login -p html report_name=login
+compartir_area: -t @compartir_area -p html report_name=compartir_area
+compartir_webform: -t @compartir_webform -p html report_name=compartir_webform
+compartir_subasta: -t @compartir_subasta -p html report_name=compartir_subasta
+compartir_servicio: -t @compartir_servicio -p html report_name=compartir_servicio
+compartir_pagina_libro: -t @compartir_pagina_libro -p html report_name=compartir_pagina_libro
+compartir_pagina: -t @compartir_pagina -p html report_name=compartir_pagina
+compartir_persona_buscada: -t @compartir_persona_buscada -p html report_name=compartir_persona_buscada
+compartir_noticia: -t @compartir_noticia -p html report_name=compartir_noticia
+sube: -t @sube -p html report_name=sube
+mas_visitados: -t @mas_visitados -p html report_name=mas_visitados
+paginas: -t @paginas -p html report_name=paginas
+tramites: -t @tramites -p html report_name=tramites
+organismos: -t @organismos -p html report_name=organismos
+todos: -t @todos -p html report_name=todos
+formularios: -t @formularios -p html report_name=formularios
+otros: -t @otros -p html report_name=otros
+
+
