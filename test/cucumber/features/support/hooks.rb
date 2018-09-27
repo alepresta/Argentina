@@ -1,8 +1,8 @@
 
 Before do
-  @cukehub_api_key = "c1ty7uj72StwdqLGWKQZRjd8"
-  @domain = "http://cukehub.com"
-  puts @browser.capabilities.browser_name + " " + @browser.capabilities.version
+  # @cukehub_api_key = "c1ty7uj72StwdqLGWKQZRjd8"
+  # @domain = "http://cukehub.com"
+  # puts @browser.capabilities.browser_name + " " + @browser.capabilities.version
 end
 
 at_exit do
@@ -43,10 +43,26 @@ at_exit do
     reporte = caso[:reporte]
     report_name = caso[:report_name]
     formato = caso[:formato]
+    #path_root_proyecto1 = "/var/lib/jenkins/workspace"
     if File.exist? "#{path_root_proyecto}/Argentina/test/report/#{report_name}/#{reporte}"
       html_content = IO.read("#{path_root_proyecto}/Argentina/test/report/#{report_name}/#{reporte}")
       html_content.gsub!("<h1>Cucumber Features</h1>","<h1><span>Caso de Prueba:</span> (#{report_name}) <br>Realizado el día: #{fecha} a las: #{hora}</br></h1>")
-      IO.write("#{path_root_proyecto}/Argentina/test/report/#{report_name}/#{report_name}_#{fecha}-#{hora}.#{formato}",html_content)
+      nombre_del_archivo = "#{report_name}_#{fecha}-#{hora}.#{formato}"
+      html_content_nuevo = "#{path_root_proyecto}/Argentina/app/views/pages/#{nombre_del_archivo}"
+      #puts html_content
+      if html_content.include? 'step failed'
+        estado = "  ლ(ಠ益ಠლ) ERROR"
+      else
+        estado = " \\(• ◡ •)/ Sin Errores"
+      end
+      IO.write("#{html_content_nuevo}",html_content)
+      # --------------------------------------------------------------------------------------
+      pegar = "<h1>Ejecuciones de pruebas</h1>
+      <p><%= link_to \"#{nombre_del_archivo}\", page_path(\"#{nombre_del_archivo}\") %><strong> \"#{estado}\"</strong></p>"
+      html_index = IO.read("#{path_root_proyecto}/Argentina/app/views/welcome/index.html.erb")
+      html_index.gsub!("<h1>Ejecuciones de pruebas</h1>","#{pegar}")
+      html_index_nuevo = "#{path_root_proyecto}/Argentina/app/views/welcome/index.html.erb"
+      IO.write("#{html_index_nuevo}",html_index)
       File.delete("#{path_root_proyecto}/Argentina/test/report/#{report_name}/#{reporte}")
     end
   end
