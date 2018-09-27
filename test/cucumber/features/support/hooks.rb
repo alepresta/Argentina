@@ -57,7 +57,7 @@ at_exit do
       end
       IO.write("#{html_content_nuevo}",html_content)
       # --------------------------------------------------------------------------------------
-      pegar = "<h1>Ejecuciones de pruebas</h1>
+      pegar = "<h1>Ejecuciones de pruebas</h1></br>
       <p><%= link_to \"#{nombre_del_archivo}\", page_path(\"#{nombre_del_archivo}\") %><strong> \"#{estado}\"</strong></p>"
       html_index = IO.read("#{path_root_proyecto}/Argentina/app/views/welcome/index.html.erb")
       html_index.gsub!("<h1>Ejecuciones de pruebas</h1>","#{pegar}")
