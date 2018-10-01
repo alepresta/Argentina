@@ -273,6 +273,7 @@ end
 
 def status_link(estatus_esperado,link)
   expected_status = ["#{estatus_esperado}", "OK"]
+  go(link)
   io = open(link)
   link_status = io.status
   unless expected_status == link_status
