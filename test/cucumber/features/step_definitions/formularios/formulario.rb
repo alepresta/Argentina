@@ -227,27 +227,8 @@ Then /^se verifica el formulario 06 hacer el seguimiento de reclamo ante defensa
   puts "El formulario: #{pagina} ...[PASSED]"
 end
 
-Then /^se verifica el formulario 07 consultar renovacion dni$/ do
-  pagina = "https://www.argentina.gob.ar/consultar-renovacion-dni"
-  go(pagina)
-  documento= "11026230"
-  capturar(:id,'edit-dni').send_keys documento
-  capturar(:id,'edit-submit').click
-  capturar(:xpath,'//*[@id="edit-submit"]').click
-  capturar(:id,'otraConsulta')
-  puts "El formulario: #{pagina} ...[PASSED]"
-end
 
-Then /^se verifica el formulario 08 consulta el estado de tramite del dni$/ do
-  pagina = "https://www.argentina.gob.ar/consultar-renovacion-dni"
-  go(pagina)
-  documento= "11026230"
-  capturar(:id,'edit-dni').send_keys documento
-  capturar(:id,'edit-submit').click
-  capturar(:xpath,'//*[@id="edit-submit"]').click
-  capturar(:id,'otraConsulta')
-  puts "El formulario: #{pagina} ...[PASSED]"
-end
+
 
 Then /^se verifica el formulario 09 primerencuentroetica formularioencuentro$/ do
   pagina = "https://www.argentina.gob.ar/primerencuentroetica/formularioencuentro"

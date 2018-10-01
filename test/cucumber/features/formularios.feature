@@ -8,8 +8,8 @@ Feature: Formularios
   04  https://www.argentina.gob.ar/consultar-donde-radicar-un-automotor
   05  https://www.argentina.gob.ar/defensadelconsumidor/formulario
   06  https://www.argentina.gob.ar/hacer-el-seguimiento-de-reclamo-ante-defensa-del-consumidor
-  07  https://www.argentina.gob.ar/consultar-renovacion-dni
-  08  https://www.argentina.gob.ar/consulta-el-estado-de-tramite-del-dni
+
+
   09  https://www.argentina.gob.ar/primerencuentroetica/formularioencuentro
   10  https://www.argentina.gob.ar/expedientes
   11  https://trabajoenred.argentina.gob.ar/#/contacto
@@ -22,8 +22,8 @@ Feature: Formularios
     Then se verifica el formulario 04 consultar donde radicar un automotor
     Then se verifica el formulario 05 defensadelconsumidor formulario
     Then se verifica el formulario 06 hacer el seguimiento de reclamo ante defensa del consumidor
-    Then se verifica el formulario 07 consultar renovacion dni
-    Then se verifica el formulario 08 consulta el estado de tramite del dni
+
+
     Then se verifica el formulario 09 primerencuentroetica formularioencuentro
     Then se verifica el formulario 10 expedientes
     Then se verifica el formulario 11 trabajoenred.argentina.gob.ar
