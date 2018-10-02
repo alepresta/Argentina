@@ -9,7 +9,7 @@ Feature: Sacar turnos multiples por Tod
                             Lucho Damián Caradelito        CUIL:27114543859
   Se atenderan los turnos creados desde el TOD
 
-  @sacar_turno_multiple_tod
+  @turnos_sacar_multiples_tod
   Scenario: Sacar turnos multiples por Tod
     Then Vaciar atendiendo todos los turnos
     Then Sacar turnos por TOD
