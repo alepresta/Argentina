@@ -1,0 +1,1365 @@
+[
+  {
+    "uri": "features/home.feature",
+    "id": "pagina-principal",
+    "keyword": "Feature",
+    "name": "Pagina principal",
+    "description": "  Este caso de prueba consiste en la verificacion de la home de Argentina.gob.ar www.argentina.gob.ar\n  Se verificara el funcionamiento del buscador tanto de la pagina principal como en cualquier otra pagina que no sea la principal\n  Se verificara que todos los links de la página principal funcionen",
+    "line": 1,
+    "elements": [
+      {
+        "id": "pagina-principal;ingresar-a-la-página-principal",
+        "keyword": "Scenario",
+        "name": "Ingresar a la página principal",
+        "description": "",
+        "line": 7,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@menu",
+            "line": 6
+          },
+          {
+            "name": "@home",
+            "line": 6
+          },
+          {
+            "name": "@todos",
+            "line": 6
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "cukehub-1.0.0/lib/cukehub.rb:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 26044
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/env.rb:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1823839056
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 29732
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "Ingresar a la página principal",
+            "line": 8,
+            "match": {
+              "location": "features/step_definitions/home/home.rb:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6615890913
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/env.rb:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 176709628
+            }
+          },
+          {
+            "match": {
+              "location": "cukehub-1.0.0/lib/cukehub.rb:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 826320240
+            }
+          }
+        ]
+      },
+      {
+        "id": "pagina-principal;buscar-en-la-página-principal",
+        "keyword": "Scenario",
+        "name": "Buscar en la página principal",
+        "description": "",
+        "line": 11,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@menu",
+            "line": 10
+          },
+          {
+            "name": "@home",
+            "line": 10
+          },
+          {
+            "name": "@todos",
+            "line": 10
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "cukehub-1.0.0/lib/cukehub.rb:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 24750
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/env.rb:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1678292063
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 17038
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Then ",
+            "name": "buscar la palabra: anses",
+            "line": 12,
+            "output": [
+              " Buscar: anses ...[PASSED]",
+              " URL: https://www.argentina.gob.ar/buscar/anses ...[PASSED]",
+              "href: https://www.argentina.gob.ar/buscar/anses ...[PASSED]",
+              "href: https://www.argentina.gob.ar/buscar/anses status([\"200\", \"OK\"])  ...[PASSED]"
+            ],
+            "match": {
+              "location": "features/step_definitions/home/home.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7884016575
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "buscar la palabra: dominio",
+            "line": 13,
+            "output": [
+              " Buscar: dominio ...[PASSED]",
+              " URL: https://www.argentina.gob.ar/buscar/dominio ...[PASSED]",
+              "href: https://www.argentina.gob.ar/buscar/dominio ...[PASSED]",
+              "href: https://www.argentina.gob.ar/buscar/dominio status([\"200\", \"OK\"])  ...[PASSED]"
+            ],
+            "match": {
+              "location": "features/step_definitions/home/home.rb:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1725151377
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "buscar la palabra: tramite de cuil",
+            "line": 14,
+            "output": [
+              " Buscar: cuil ...[PASSED]",
+              " URL: https://www.argentina.gob.ar/buscar/cuil ...[PASSED]",
+              "href: https://www.argentina.gob.ar/buscar/cuil ...[PASSED]",
+              "href: https://www.argentina.gob.ar/buscar/cuil status([\"200\", \"OK\"])  ...[PASSED]"
+            ],
+            "match": {
+              "location": "features/step_definitions/home/home.rb:44"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1789969817
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "buscar la palabra: cuit hermano",
+            "line": 15,
+            "output": [
+              " Buscar: hermano ...[PASSED]",
+              " URL: https://www.argentina.gob.ar/buscar/hermano ...[PASSED]",
+              "href: https://www.argentina.gob.ar/buscar/hermano ...[PASSED]",
+              "href: https://www.argentina.gob.ar/buscar/hermano status([\"200\", \"OK\"])  ...[PASSED]"
+            ],
+            "match": {
+              "location": "features/step_definitions/home/home.rb:61"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1698045895
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "buscar la palabra: SALUD",
+            "line": 16,
+            "output": [
+              " Buscar: SALUD ...[PASSED]",
+              " URL: https://www.argentina.gob.ar/buscar/SALUD ...[PASSED]",
+              "href: https://www.argentina.gob.ar/buscar/SALUD ...[PASSED]",
+              "href: https://www.argentina.gob.ar/buscar/SALUD status([\"200\", \"OK\"])  ...[PASSED]"
+            ],
+            "match": {
+              "location": "features/step_definitions/home/home.rb:78"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1660437725
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "buscar la palabra: SALÚD",
+            "line": 17,
+            "output": [
+              " Buscar: SALÚD ...[PASSED]",
+              " URL: https://www.argentina.gob.ar/buscar/SAL%C3%9AD ...[PASSED]",
+              "href: https://www.argentina.gob.ar/buscar/SAL%C3%9AD ...[PASSED]",
+              "href: https://www.argentina.gob.ar/buscar/SAL%C3%9AD status([\"200\", \"OK\"])  ...[PASSED]"
+            ],
+            "match": {
+              "location": "features/step_definitions/home/home.rb:95"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1712559548
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "buscar la palabra: jubilacion",
+            "line": 18,
+            "output": [
+              " Buscar: jubilacion ...[PASSED]",
+              " URL: https://www.argentina.gob.ar/buscar/jubilacion ...[PASSED]",
+              "href: https://www.argentina.gob.ar/buscar/jubilacion ...[PASSED]",
+              "href: https://www.argentina.gob.ar/buscar/jubilacion status([\"200\", \"OK\"])  ...[PASSED]"
+            ],
+            "match": {
+              "location": "features/step_definitions/home/home.rb:112"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1680533354
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "buscar la palabra: trámite de médula ósea",
+            "line": 19,
+            "output": [
+              " Buscar: trámite de médula ósea ...[PASSED]",
+              " URL: https://www.argentina.gob.ar/buscar/tr%C3%A1mite%20de%20m%C3%A9dula%20%C3%B3sea ...[PASSED]",
+              "href: https://www.argentina.gob.ar/buscar/tr%C3%A1mite%20de%20m%C3%A9dula%20%C3%B3sea ...[PASSED]",
+              "href: https://www.argentina.gob.ar/buscar/tr%C3%A1mite%20de%20m%C3%A9dula%20%C3%B3sea status([\"200\", \"OK\"])  ...[PASSED]"
+            ],
+            "match": {
+              "location": "features/step_definitions/home/home.rb:129"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1918485867
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "buscar desde argentina.gob.ar finanzas",
+            "line": 20,
+            "output": [
+              " Buscar: anses ...[PASSED]",
+              " URL: https://www.argentina.gob.ar/buscar/anses ...[PASSED]",
+              "href: https://www.argentina.gob.ar/buscar/anses ...[PASSED]",
+              "href: https://www.argentina.gob.ar/buscar/anses status([\"200\", \"OK\"])  ...[PASSED]"
+            ],
+            "match": {
+              "location": "features/step_definitions/home/home.rb:559"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3249424279
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "buscar desde argentina.gob.ar vuce novedades",
+            "line": 21,
+            "output": [
+              " Buscar: dominio ...[PASSED]",
+              " URL: https://www.argentina.gob.ar/buscar/dominio ...[PASSED]",
+              "href: https://www.argentina.gob.ar/buscar/dominio ...[PASSED]",
+              "href: https://www.argentina.gob.ar/buscar/dominio status([\"200\", \"OK\"])  ...[PASSED]"
+            ],
+            "match": {
+              "location": "features/step_definitions/home/home.rb:576"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2386898192
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "buscar desde argentina.gob.ar anmat",
+            "line": 22,
+            "output": [
+              " Buscar: cuil ...[PASSED]",
+              " URL: https://www.argentina.gob.ar/buscar/cuil ...[PASSED]",
+              "href: https://www.argentina.gob.ar/buscar/cuil ...[PASSED]",
+              "href: https://www.argentina.gob.ar/buscar/cuil status([\"200\", \"OK\"])  ...[PASSED]"
+            ],
+            "match": {
+              "location": "features/step_definitions/home/home.rb:593"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1932823906
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "buscar desde argentina.gob.ar salud",
+            "line": 23,
+            "output": [
+              " Buscar: SALUD ...[PASSED]",
+              " URL: https://www.argentina.gob.ar/buscar/SALUD ...[PASSED]",
+              "href: https://www.argentina.gob.ar/buscar/SALUD ...[PASSED]",
+              "href: https://www.argentina.gob.ar/buscar/SALUD status([\"200\", \"OK\"])  ...[PASSED]"
+            ],
+            "match": {
+              "location": "features/step_definitions/home/home.rb:610"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1976921414
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "buscar desde argentina.gob.ar hacienda",
+            "line": 24,
+            "output": [
+              " Buscar: jubilacion ...[PASSED]",
+              " URL: https://www.argentina.gob.ar/buscar/jubilacion ...[PASSED]",
+              "href: https://www.argentina.gob.ar/buscar/jubilacion ...[PASSED]",
+              "href: https://www.argentina.gob.ar/buscar/jubilacion status([\"200\", \"OK\"])  ...[PASSED]"
+            ],
+            "match": {
+              "location": "features/step_definitions/home/home.rb:627"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2225697204
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "buscar desde argentina.gob.ar politicassociales",
+            "line": 25,
+            "output": [
+              " Buscar: trámite de médula ósea ...[PASSED]",
+              " URL: https://www.argentina.gob.ar/buscar/tr%C3%A1mite%20de%20m%C3%A9dula%20%C3%B3sea ...[PASSED]",
+              "href: https://www.argentina.gob.ar/buscar/tr%C3%A1mite%20de%20m%C3%A9dula%20%C3%B3sea ...[PASSED]",
+              "href: https://www.argentina.gob.ar/buscar/tr%C3%A1mite%20de%20m%C3%A9dula%20%C3%B3sea status([\"200\", \"OK\"])  ...[PASSED]"
+            ],
+            "match": {
+              "location": "features/step_definitions/home/home.rb:644"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2353016297
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "buscar desde argentina.gob.ar transporte",
+            "line": 26,
+            "output": [
+              " Buscar: SALÚD ...[PASSED]",
+              " URL: https://www.argentina.gob.ar/buscar/SAL%C3%9AD ...[PASSED]",
+              "href: https://www.argentina.gob.ar/buscar/SAL%C3%9AD ...[PASSED]",
+              "href: https://www.argentina.gob.ar/buscar/SAL%C3%9AD status([\"200\", \"OK\"])  ...[PASSED]"
+            ],
+            "match": {
+              "location": "features/step_definitions/home/home.rb:661"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1755698818
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/env.rb:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 180864637
+            }
+          },
+          {
+            "match": {
+              "location": "cukehub-1.0.0/lib/cukehub.rb:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 715042280
+            }
+          }
+        ]
+      },
+      {
+        "id": "pagina-principal;botón-mi-argentina",
+        "keyword": "Scenario",
+        "name": "botón Mi Argentina",
+        "description": "",
+        "line": 29,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@menu",
+            "line": 28
+          },
+          {
+            "name": "@home",
+            "line": 28
+          },
+          {
+            "name": "@todos",
+            "line": 28
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "cukehub-1.0.0/lib/cukehub.rb:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 22561
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/env.rb:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1778092014
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 15736
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Then ",
+            "name": "verificar que el botón Mi Argentina redirija correctamente",
+            "line": 30,
+            "output": [
+              "antes https://id.argentina.gob.ar/ingresar/?next=/authorize/%3Fclient_id%3D613410%26response_type%3Dcode%26scope%3Dopenid%2Bprofile%2Bemail%2Boptional%26redirect_uri%3Dhttps%3A//mi.argentina.gob.ar/_oauth/oidc%26state%3DeyJsb2dpblN0eWxlIjoicmVkaXJlY3QiLCJjcmVkZW50aWFsVG9rZW4iOiIzOTNaN3ViOTViajk5ZXVCaiIsImlzQ29yZG92YSI6ZmFsc2UsInJlZGlyZWN0VXJsIjoiaHR0cHM6Ly9taS5hcmdlbnRpbmEuZ29iLmFyLyJ9",
+              "despues https://id.argentina.gob.ar/ingresar/?next=/authorize/%3Fclient_id%3D613410%26response_type%3Dcode%26scope%3Dopenid%2Bprofile%2Bemail%2Boptional%26redirect_uri%3Dhttps%3A//mi.argentina.gob.ar/_oauth/oidc%26state%3DeyJsb2dpblN0eWxlIjoicmVkaXJlY3QiLCJjcmVkZW50aWFsVG9rZW4iOiIzOTNaN3ViOTViajk5ZXVCaiIsImlzQ29yZG92YSI6ZmFsc2UsInJlZGlyZWN0VXJsIjoiaHR0cHM6Ly9taS5hcmdlbnRpbmEuZ29iLmFyLyJ9",
+              " URL: https://id.argentina.gob.ar/ingresar/?next=/authorize/%3Fclient_id%3D613410%26response_type%3Dcode%26scope%3Dopenid%2Bprofile%2Bemail%2Boptional%26redirect_uri%3Dhttps%3A//mi.argentina.gob.ar/_oauth/oidc%26state%3DeyJsb2dpblN0eWxlIjoicmVkaXJlY3QiLCJjcmVkZW50aWFsVG9rZW4iOiIzOTNaN3ViOTViajk5ZXVCaiIsImlzQ29yZG92YSI6ZmFsc2UsInJlZGlyZWN0VXJsIjoiaHR0cHM6Ly9taS5hcmdlbnRpbmEuZ29iLmFyLyJ9 ...[PASSED]"
+            ],
+            "match": {
+              "location": "features/step_definitions/home/home.rb:146"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16987875424
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/env.rb:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 178227585
+            }
+          },
+          {
+            "match": {
+              "location": "cukehub-1.0.0/lib/cukehub.rb:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 748876171
+            }
+          }
+        ]
+      },
+      {
+        "id": "pagina-principal;verificar-los-links-del-panel-body-redirijan-al-sitio-esperado",
+        "keyword": "Scenario",
+        "name": "Verificar los links del panel-body redirijan al sitio esperado",
+        "description": "",
+        "line": 33,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@menu",
+            "line": 32
+          },
+          {
+            "name": "@home",
+            "line": 32
+          },
+          {
+            "name": "@todos",
+            "line": 32
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "cukehub-1.0.0/lib/cukehub.rb:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 49391
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/env.rb:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1768026821
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 14363
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Then ",
+            "name": "link - Si tenés que hacer un trámite, podés sacar turno en línea y ganar tiempo.",
+            "line": 34,
+            "output": [
+              "Sacá tu turno\nSi tenés que hacer un trámite, podés sacar turno en línea y ganar tiempo.",
+              "href: https://www.argentina.gob.ar/turnos ...[PASSED]",
+              "href: https://www.argentina.gob.ar/turnos status([\"200\", \"OK\"])  ...[PASSED]"
+            ],
+            "match": {
+              "location": "features/step_definitions/home/home.rb:159"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8935550188
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "link - Donar órganos",
+            "line": 35,
+            "output": [
+              "Campaña Nacional de Vacunación contra Sarampión y Rubéola\nDel 1 de octubre al 30 de noviembre en todo el país.",
+              "href: https://www.argentina.gob.ar/vacunas/sarampionrubeola ...[PASSED]",
+              "href: https://www.argentina.gob.ar/vacunas/sarampionrubeola status([\"200\", \"OK\"])  ...[PASSED]"
+            ],
+            "match": {
+              "location": "features/step_definitions/home/home.rb:171"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1651837578
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "link - RED SUBE",
+            "line": 36,
+            "output": [
+              "RED SUBE\nPara que los que viajan más paguen menos.",
+              "href: https://www.argentina.gob.ar/redsube ...[PASSED]",
+              "href: https://www.argentina.gob.ar/redsube status([\"200\", \"OK\"])  ...[PASSED]"
+            ],
+            "match": {
+              "location": "features/step_definitions/home/home.rb:183"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1673786450
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "link - Mi Argentina",
+            "line": 37,
+            "output": [
+              "Mi Argentina\nDescargá tu constancia de CUIL con un solo clic y otros servicios personalizados.",
+              "href: https://www.argentina.gob.ar/miargentina ...[PASSED]",
+              "href: https://www.argentina.gob.ar/miargentina status([\"200\", \"OK\"])  ...[PASSED]"
+            ],
+            "match": {
+              "location": "features/step_definitions/home/home.rb:194"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1599699884
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/env.rb:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 168605653
+            }
+          },
+          {
+            "match": {
+              "location": "cukehub-1.0.0/lib/cukehub.rb:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 701971705
+            }
+          }
+        ]
+      },
+      {
+        "id": "pagina-principal;verificar-los-links-de-trámites-y-servicios-se-redirijan-correctamante",
+        "keyword": "Scenario",
+        "name": "Verificar los links de trámites y servicios se redirijan correctamante",
+        "description": "",
+        "line": 40,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@menu",
+            "line": 39
+          },
+          {
+            "name": "@home",
+            "line": 39
+          },
+          {
+            "name": "@todos",
+            "line": 39
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "cukehub-1.0.0/lib/cukehub.rb:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 24008
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/env.rb:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1874082432
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16314
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Then ",
+            "name": "link - Identidad",
+            "line": 41,
+            "output": [
+              "Identidad\nTe guiamos en trámites tales como sacar el DNI o pasaporte y cambio de género, entre otros.",
+              "href: https://www.argentina.gob.ar/tema/identidad ...[PASSED]",
+              "href: https://www.argentina.gob.ar/tema/identidad status([\"200\", \"OK\"])  ...[PASSED]"
+            ],
+            "match": {
+              "location": "features/step_definitions/home/home.rb:205"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7202159226
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "link - Trabajar",
+            "line": 42,
+            "output": [
+              "Trabajar\nTodos los servicios por si sos empleado, monotributista, querés capacitarte o estás buscando trabajo.",
+              "href: https://www.argentina.gob.ar/tema/trabajar ...[PASSED]",
+              "href: https://www.argentina.gob.ar/tema/trabajar status([\"200\", \"OK\"])  ...[PASSED]"
+            ],
+            "match": {
+              "location": "features/step_definitions/home/home.rb:216"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1923941701
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "link - Cuidar la salud",
+            "line": 43,
+            "output": [
+              "Cuidar la salud\nVacunas obligatorias, primeros auxilios ante emergencias y consejos para una vida saludable.",
+              "href: https://www.argentina.gob.ar/tema/cuidarlasalud ...[PASSED]",
+              "href: https://www.argentina.gob.ar/tema/cuidarlasalud status([\"200\", \"OK\"])  ...[PASSED]"
+            ],
+            "match": {
+              "location": "features/step_definitions/home/home.rb:227"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1469993810
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "link - Estudiar",
+            "line": 44,
+            "output": [
+              "Estudiar\nNiveles y modalidades educativas, programas, becas y reválida de títulos.",
+              "href: https://www.argentina.gob.ar/tema/estudiar ...[PASSED]",
+              "href: https://www.argentina.gob.ar/tema/estudiar status([\"200\", \"OK\"])  ...[PASSED]"
+            ],
+            "match": {
+              "location": "features/step_definitions/home/home.rb:237"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1263443729
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "link - Emprender, innovar, crecer",
+            "line": 45,
+            "output": [
+              "Emprender, innovar, crecer\nHerramientas de financiamiento y capacitación para emprendedores y PyMEs.",
+              "href: https://www.argentina.gob.ar/tema/emprender ...[PASSED]",
+              "href: https://www.argentina.gob.ar/tema/emprender status([\"200\", \"OK\"])  ...[PASSED]"
+            ],
+            "match": {
+              "location": "features/step_definitions/home/home.rb:248"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1275264202
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "link - Adultos mayores",
+            "line": 46,
+            "output": [
+              "Adultos mayores\nConsejos, servicios y orientación para realizar trámites de jubilaciones y pensiones.",
+              "href: https://www.argentina.gob.ar/tema/adultosmayores ...[PASSED]",
+              "href: https://www.argentina.gob.ar/tema/adultosmayores status([\"200\", \"OK\"])  ...[PASSED]"
+            ],
+            "match": {
+              "location": "features/step_definitions/home/home.rb:259"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1838257010
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "link - Personas con discapacidad",
+            "line": 47,
+            "output": [
+              "Personas con discapacidad\nServicios para atención de la salud, asignaciones familiares, viajar gratis y más trámites.",
+              "href: https://www.argentina.gob.ar/andis ...[PASSED]",
+              "href: https://www.argentina.gob.ar/andis status([\"200\", \"OK\"])  ...[PASSED]"
+            ],
+            "match": {
+              "location": "features/step_definitions/home/home.rb:270"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1265591459
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "link - Argentinos en el mundo",
+            "line": 48,
+            "output": [
+              "Argentinos en el mundo\nSi te encontrás en otro país o vas a hacer un viaje, chequeá información útil.",
+              "href: https://www.argentina.gob.ar/argentinosenelmundo ...[PASSED]",
+              "href: https://www.argentina.gob.ar/argentinosenelmundo status([\"200\", \"OK\"])  ...[PASSED]"
+            ],
+            "match": {
+              "location": "features/step_definitions/home/home.rb:281"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1367507971
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "link - Extranjeros en Argentina",
+            "line": 49,
+            "output": [
+              "Extranjeros en Argentina\nInformación y servicios para los que viajan, estudian, trabajan y viven en la Argentina.",
+              "href: https://www.argentina.gob.ar/tema/extranjeros ...[PASSED]",
+              "href: https://www.argentina.gob.ar/tema/extranjeros status([\"200\", \"OK\"])  ...[PASSED]"
+            ],
+            "match": {
+              "location": "features/step_definitions/home/home.rb:292"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1277406220
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "link - Cultura y tiempo libre",
+            "line": 50,
+            "output": [
+              "Cultura y tiempo libre\nPropuestas recreativas y deportivas, agenda artística, cultural, viajes y vacaciones.",
+              "href: https://www.argentina.gob.ar/tema/culturaytiempolibre ...[PASSED]",
+              "href: https://www.argentina.gob.ar/tema/culturaytiempolibre status([\"200\", \"OK\"])  ...[PASSED]"
+            ],
+            "match": {
+              "location": "features/step_definitions/home/home.rb:303"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1933996381
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "link - Pareja y familia",
+            "line": 51,
+            "output": [
+              "Pareja y familia\nTrámites relacionados con estar en pareja, tener un hijo o enfrentar el fallecimiento de un ser querido.",
+              "href: https://www.argentina.gob.ar/tema/hogar ...[PASSED]",
+              "href: https://www.argentina.gob.ar/tema/hogar status([\"200\", \"OK\"])  ...[PASSED]"
+            ],
+            "match": {
+              "location": "features/step_definitions/home/home.rb:314"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1249422267
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "link - Violencia y abuso",
+            "line": 52,
+            "output": [
+              "Violencia y abuso\nAnte una situación de violencia o abuso no dudes en llamar y denunciar.",
+              "href: https://www.argentina.gob.ar/tema/violenciayabuso ...[PASSED]",
+              "href: https://www.argentina.gob.ar/tema/violenciayabuso status([\"200\", \"OK\"])  ...[PASSED]"
+            ],
+            "match": {
+              "location": "features/step_definitions/home/home.rb:325"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1449381032
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "link - Emergencias",
+            "line": 53,
+            "output": [
+              "Emergencias\nTe ofrecemos una lista de números y consejos a seguir.",
+              "href: https://www.argentina.gob.ar/tema/emergencias ...[PASSED]",
+              "href: https://www.argentina.gob.ar/tema/emergencias status([\"200\", \"OK\"])  ...[PASSED]"
+            ],
+            "match": {
+              "location": "features/step_definitions/home/home.rb:336"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1428268030
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "link - Acceder a una vivienda",
+            "line": 54,
+            "output": [
+              "Acceder a una vivienda\nInformación sobre créditos, programas de vivienda para compra o mejoras y derechos de inquilinos y propietarios.",
+              "href: https://www.argentina.gob.ar/tema/acceder-una-vivienda ...[PASSED]",
+              "href: https://www.argentina.gob.ar/tema/acceder-una-vivienda status([\"200\", \"OK\"])  ...[PASSED]"
+            ],
+            "match": {
+              "location": "features/step_definitions/home/home.rb:347"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1615654098
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "link - Tránsito y automotor",
+            "line": 55,
+            "output": [
+              "Tránsito y automotor\nInformación para circular en vía pública y para comprar, registrar, permutar, asegurar o vender tu auto o moto.",
+              "href: https://www.argentina.gob.ar/tema/automotor ...[PASSED]",
+              "href: https://www.argentina.gob.ar/tema/automotor status([\"200\", \"OK\"])  ...[PASSED]"
+            ],
+            "match": {
+              "location": "features/step_definitions/home/home.rb:358"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1332723300
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "link - Consumidores",
+            "line": 56,
+            "output": [
+              "Consumidores\nInformación sobre tus derechos, herramientas para comprar o contratar servicios, y pautas para hacer un reclamo.",
+              "href: https://www.argentina.gob.ar/tema/consumidores ...[PASSED]",
+              "href: https://www.argentina.gob.ar/tema/consumidores status([\"200\", \"OK\"])  ...[PASSED]"
+            ],
+            "match": {
+              "location": "features/step_definitions/home/home.rb:369"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1297909491
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "link - Transparencia",
+            "line": 57,
+            "output": [
+              "Transparencia\nInformación y datos públicos, estadísticas y organismos de control.",
+              "href: https://www.argentina.gob.ar/tema/transparencia ...[PASSED]",
+              "href: https://www.argentina.gob.ar/tema/transparencia status([\"200\", \"OK\"])  ...[PASSED]"
+            ],
+            "match": {
+              "location": "features/step_definitions/home/home.rb:380"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1486034526
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/env.rb:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 162958312
+            }
+          },
+          {
+            "match": {
+              "location": "cukehub-1.0.0/lib/cukehub.rb:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 713758059
+            }
+          }
+        ]
+      },
+      {
+        "id": "pagina-principal;verificar-que-los-link-de-la-sección-más-consultados",
+        "keyword": "Scenario",
+        "name": "Verificar que los link de la sección Más consultados",
+        "description": "",
+        "line": 60,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@menu",
+            "line": 59
+          },
+          {
+            "name": "@home",
+            "line": 59
+          },
+          {
+            "name": "@todos",
+            "line": 59
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "cukehub-1.0.0/lib/cukehub.rb:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 23745
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/env.rb:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1774994345
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 19134
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Then ",
+            "name": "Se verificaran 8 links y textos",
+            "line": 61,
+            "output": [
+              "Tramitar turnos para ANSES",
+              "href: https://www.argentina.gob.ar/turnosparaanses ...[PASSED]",
+              "href: https://www.argentina.gob.ar/turnosparaanses status([\"200\", \"OK\"])  ...[PASSED]",
+              "Consultar el calendario de pago de ANSES",
+              "href: https://www.argentina.gob.ar/consultar-el-calendario-de-pagos-de-anses ...[PASSED]",
+              "href: https://www.argentina.gob.ar/consultar-el-calendario-de-pagos-de-anses status([\"200\", \"OK\"])  ...[PASSED]",
+              "Obtener certificación negativa de ANSES",
+              "href: https://www.argentina.gob.ar/obtener-certificacion-negativa-de-anses ...[PASSED]",
+              "href: https://www.argentina.gob.ar/obtener-certificacion-negativa-de-anses status([\"200\", \"OK\"])  ...[PASSED]",
+              "Seguir el estado de trámite del DNI",
+              "href: https://www.argentina.gob.ar/seguir-el-estado-de-tramite-del-dni ...[PASSED]",
+              "href: https://www.argentina.gob.ar/seguir-el-estado-de-tramite-del-dni status([\"200\", \"OK\"])  ...[PASSED]",
+              "Consultar radicación de automotor",
+              "href: https://www.argentina.gob.ar/consultar-donde-esta-radicado-un-vehiculo ...[PASSED]",
+              "href: https://www.argentina.gob.ar/consultar-donde-esta-radicado-un-vehiculo status([\"200\", \"OK\"])  ...[PASSED]",
+              "Consultar si estás incluido en la Reparación Histórica de jubilados y pensionados",
+              "href: https://www.argentina.gob.ar/consultar-por-la-reparacion-historica-de-jubilados-y-pensionados ...[PASSED]",
+              "href: https://www.argentina.gob.ar/consultar-por-la-reparacion-historica-de-jubilados-y-pensionados status([\"200\", \"OK\"])  ...[PASSED]",
+              "Obtener tu constancia de CUIL",
+              "href: https://www.argentina.gob.ar/obtener-tu-constancia-de-cuil ...[PASSED]",
+              "href: https://www.argentina.gob.ar/obtener-tu-constancia-de-cuil status([\"200\", \"OK\"])  ...[PASSED]",
+              "Certificado de Antecedentes Penales",
+              "href: https://www.argentina.gob.ar/solicitar-certificado-de-antecedentes-penales ...[PASSED]",
+              "href: https://www.argentina.gob.ar/solicitar-certificado-de-antecedentes-penales status([\"200\", \"OK\"])  ...[PASSED]"
+            ],
+            "match": {
+              "location": "features/step_definitions/home/home.rb:391"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16594898452
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/env.rb:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 169825661
+            }
+          },
+          {
+            "match": {
+              "location": "cukehub-1.0.0/lib/cukehub.rb:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 698782038
+            }
+          }
+        ]
+      },
+      {
+        "id": "pagina-principal;verificar-los-links-del-footer",
+        "keyword": "Scenario",
+        "name": "Verificar los links del footer",
+        "description": "",
+        "line": 64,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@menu",
+            "line": 63
+          },
+          {
+            "name": "@home",
+            "line": 63
+          },
+          {
+            "name": "@todos",
+            "line": 63
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "cukehub-1.0.0/lib/cukehub.rb:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 29283
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/env.rb:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1786718309
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 15886
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Then ",
+            "name": "link - Creative Commons Reconocimiento",
+            "line": 65,
+            "output": [
+              "Creative Commons Reconocimiento 2.5 Argentina License",
+              "href: https://www.argentina.gob.ar/ ...[PASSED]",
+              "href: https://www.argentina.gob.ar/ status([\"200\", \"OK\"])  ...[PASSED]"
+            ],
+            "match": {
+              "location": "features/step_definitions/home/home.rb:466"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4420088655
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "link - QUERÉS HACERNOS UNA SUGERENCIA",
+            "line": 66,
+            "match": {
+              "location": "features/step_definitions/home/home.rb:477"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 581258302
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "link - Trámites y servicios",
+            "line": 67,
+            "output": [
+              "Trámites y servicios",
+              "href: https://www.argentina.gob.ar/buscar?f%5B0%5D=bundle%3A%28tramite%20OR%20argentinagobar_migtram%29 ...[PASSED]",
+              "href: https://www.argentina.gob.ar/buscar?f%5B0%5D=bundle%3A%28tramite%20OR%20argentinagobar_migtram%29 status([\"200\", \"OK\"])  ...[PASSED]"
+            ],
+            "match": {
+              "location": "features/step_definitions/home/home.rb:482"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1066962116
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "link - Turnos",
+            "line": 68,
+            "output": [
+              "Turnos",
+              "href: https://www.argentina.gob.ar/turnos ...[PASSED]",
+              "href: https://www.argentina.gob.ar/turnos status([\"200\", \"OK\"])  ...[PASSED]"
+            ],
+            "match": {
+              "location": "features/step_definitions/home/home.rb:493"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3273401362
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "link - Organismos del Estado",
+            "line": 69,
+            "output": [
+              "Organismos del Estado",
+              "href: https://www.argentina.gob.ar/organismos ...[PASSED]",
+              "href: https://www.argentina.gob.ar/organismos status([\"200\", \"OK\"])  ...[PASSED]"
+            ],
+            "match": {
+              "location": "features/step_definitions/home/home.rb:504"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1266850550
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "link - Mapa del Estado",
+            "line": 70,
+            "output": [
+              "Mapa del Estado",
+              "href: http://mapadelestado.jefatura.gob.ar/ ...[PASSED]",
+              "href: http://mapadelestado.jefatura.gob.ar/ status([\"200\", \"OK\"])  ...[PASSED]"
+            ],
+            "match": {
+              "location": "features/step_definitions/home/home.rb:515"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4545775700
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "link - Acerca de este sitio",
+            "line": 71,
+            "output": [
+              "Acerca de este sitio",
+              "href: https://www.argentina.gob.ar/acerca ...[PASSED]",
+              "href: https://www.argentina.gob.ar/acerca status([\"200\", \"OK\"])  ...[PASSED]"
+            ],
+            "match": {
+              "location": "features/step_definitions/home/home.rb:526"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1002288669
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "link - Términos y condiciones",
+            "line": 72,
+            "output": [
+              "Términos y condiciones",
+              "href: https://www.argentina.gob.ar/terminos-y-condiciones ...[PASSED]",
+              "href: https://www.argentina.gob.ar/terminos-y-condiciones status([\"200\", \"OK\"])  ...[PASSED]"
+            ],
+            "match": {
+              "location": "features/step_definitions/home/home.rb:537"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 880082592
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "link - Ayuda",
+            "line": 73,
+            "output": [
+              "Ayuda",
+              "href: https://www.argentina.gob.ar/ayuda ...[PASSED]",
+              "href: https://www.argentina.gob.ar/ayuda status([\"200\", \"OK\"])  ...[PASSED]"
+            ],
+            "match": {
+              "location": "features/step_definitions/home/home.rb:548"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1142246392
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/env.rb:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 167266129
+            }
+          },
+          {
+            "match": {
+              "location": "cukehub-1.0.0/lib/cukehub.rb:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 699682718
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
