@@ -6,7 +6,7 @@ Feature: sacar turno a multiples usuarios
                                               27148533070,27230388569,20284635885,27038667616,27371491657,20110219831,23234020544,
                                               20052701024,20249403467,20267047813,20372995417,20253603144,27033056562,27388881548
 
-  @sacar_turno_multiple
+  @turnos_sacar_multiples
   Scenario: sacar turno a multiples usuarios
     Then sacar turno a url-62 con usuarios diferentes
 

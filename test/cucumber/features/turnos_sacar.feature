@@ -9,11 +9,11 @@ Feature: Sacar Turno
 
   Se utiliza la url: https://turnos.argentina.gob.ar/turnos/seleccionTurno/9 para sacar el turno
 
-  @sacar_turno
+  @turnos_sacar
   Scenario: Que un usuario pueda sacar un turno y cancelarlo en el momento
     Then 1- Sacar un turno y cancelarlo en el momento
 
-  @sacar_turno
+  @turnos_sacar
   Scenario: Que un usuario pueda sacar un turno y cancelarlo por mail y que el mail coincida con los datos del turno
     Then 2- Sacar un turno y cancelarlo por mail
 
