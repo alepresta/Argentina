@@ -1,8 +1,8 @@
 Then /^01- Casa Rosada$/ do
   organismos
   organismo_a_encontrar = "Casa Rosada"
-  organismo_encontrado = capturar(:xpath, '/html/body/main/div[2]/div/section[2]/div/div[1]/div/div/div/div/div/div[1]')
-  lin_organismo = capturar(:xpath, '/html/body/main/div[2]/div/section[2]/div/div[1]/div/div/div/div/div/div[1]/a')
+  organismo_encontrado = capturar(:xpath, '/html/body/main/div[2]/div/section[2]/div/div[1]/div/div/div/div[1]/a/div/h3/strong')
+  lin_organismo = capturar(:xpath, '/html/body/main/div[2]/div/section[2]/div/div[1]/div/div/div/div[1]/a')
   link_organismo = lin_organismo.attribute("href")
   if organismo_encontrado.text.include? organismo_a_encontrar
     puts "Organismo encontrado: #{organismo_a_encontrar.yellow}"
@@ -15,8 +15,8 @@ end
 Then /^02- Secretaría General$/ do
   organismos
   organismo_a_encontrar = "Secretaría General"
-  organismo_encontrado = capturar(:xpath, '/html/body/main/div[2]/div/section[2]/div/div[1]/div/div/div/div/div/div[2]/a/div/h3/strong')
-  lin_organismo = capturar(:xpath, '/html/body/main/div[2]/div/section[2]/div/div[1]/div/div/div/div/div/div[2]/a')
+  organismo_encontrado = capturar(:xpath, '/html/body/main/div[2]/div/section[2]/div/div[1]/div/div/div/div[2]/a/div/h3/strong')
+  lin_organismo = capturar(:xpath, '/html/body/main/div[2]/div/section[2]/div/div[1]/div/div/div/div[2]/a')
   link_organismo = lin_organismo.attribute("href")
   if organismo_encontrado.text.include? organismo_a_encontrar
     puts "Organismo encontrado: #{organismo_a_encontrar.yellow}"
@@ -29,8 +29,8 @@ end
 Then /^03- Secretaría Legal y Técnica$/ do
   organismos
   organismo_a_encontrar = "Secretaría Legal y Técnica"
-  organismo_encontrado = capturar(:xpath, '/html/body/main/div[2]/div/section[2]/div/div[1]/div/div/div/div/div/div[3]/a/div/h3/strong')
-  lin_organismo = capturar(:xpath, '//*[@id="block-system-main"]/section[2]/div/div[1]/div/div/div/div/div/div[3]/a')
+  organismo_encontrado = capturar(:xpath, '/html/body/main/div[2]/div/section[2]/div/div[1]/div/div/div/div[3]/a/div/h3/strong')
+  lin_organismo = capturar(:xpath, '/html/body/main/div[2]/div/section[2]/div/div[1]/div/div/div/div[3]/a')
   link_organismo = lin_organismo.attribute("href")
   if organismo_encontrado.text.include? organismo_a_encontrar
     puts "Organismo encontrado: #{organismo_a_encontrar.yellow}"
@@ -43,8 +43,8 @@ end
 Then /^04- Sedronar$/ do
   organismos
   organismo_a_encontrar = "Sedronar"
-  organismo_encontrado = capturar(:xpath, '//*[@id="block-system-main"]/section[2]/div/div[1]/div/div/div/div/div/div[4]/a/div/h3/strong')
-  lin_organismo = capturar(:xpath, '//*[@id="block-system-main"]/section[2]/div/div[1]/div/div/div/div/div/div[4]/a')
+  organismo_encontrado = capturar(:xpath, '/html/body/main/div[2]/div/section[2]/div/div[1]/div/div/div/div[4]/a/div/h3/strong')
+  lin_organismo = capturar(:xpath, '/html/body/main/div[2]/div/section[2]/div/div[1]/div/div/div/div[4]/a')
   link_organismo = lin_organismo.attribute("href")
   if organismo_encontrado.text.include? organismo_a_encontrar
     puts "Organismo encontrado: #{organismo_a_encontrar.yellow}"
