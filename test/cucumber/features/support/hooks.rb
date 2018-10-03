@@ -45,16 +45,12 @@ at_exit do
     tag = caso[:tag]
     formato = caso[:formato]
     plataforma = caso[:plataforma]
-    #if File.exist? "#{path_root_proyecto}/Argentina/test/report/constructor_de_reportes/#{fichero}"
-    if File.exist? "/var/lib/jenkins/GobiernoDigital/Argentina/test/report/constructor_de_reportes/#{fichero}"
+    if File.exist? "#{path_root_proyecto}/Argentina/test/report/constructor_de_reportes/#{fichero}"
       if formato == "html"
-        #html_content = IO.read("#{path_root_proyecto}/Argentina/test/report/constructor_de_reportes/#{fichero}")
-        html_content = IO.read("/var/lib/jenkins/GobiernoDigital/Argentina/test/report/constructor_de_reportes/#{fichero}")
-        html_content.gsub!("<h1>Plataforma: #{plataforma}</h1>","<h1><span>Caso de Prueba:</span> (#{tag}) <br>Realizado el día: #{fecha} a las: #{hora}</br></h1>")
-        nombre_del_archivo = "#{plataforma}_#{fichero}"
-        # path_pages = "#{path_root_proyecto}/Argentina/app/views/pages/#{nombre_del_archivo}"
-        path_pages = "/var/lib/jenkins/GobiernoDigital/Argentina/app/views/pages/#{nombre_del_archivo}"
-
+        html_content = IO.read("#{path_root_proyecto}/Argentina/test/report/constructor_de_reportes/#{fichero}")
+        html_content.gsub!("<h1>Cucumber Features</h1>","<h1><span>Caso de Prueba:</span> (#{tag}) <br>Realizado el día: #{fecha} a las: #{hora}</br></h1>")
+        nombre_del_archivo = "#{plataforma}_#{tag}"
+        path_pages = "#{path_root_proyecto}/Argentina/app/views/pages/#{nombre_del_archivo}"
         IO.write("#{path_pages}",html_content)
         if html_content.include? 'step failed'
           estado_texto = "  ლ(ಠ益ಠლ) ERROR"
@@ -66,20 +62,16 @@ at_exit do
         pegar   = "<h1>Ejecuciones de pruebas</h1>
                   QA231425267"
         pegar_1 = "<p><%= link_to \"#{nombre_del_archivo}\", page_path(\"#{nombre_del_archivo}\") %><strong> #{estado} ......... #{estado_texto}</strong></p>"
-        #html_index = IO.read("#{path_root_proyecto}/Argentina/app/views/welcome/index.html.erb")
-        html_index = IO.read("/var/lib/jenkins/GobiernoDigital/Argentina/app/views/welcome/index.html.erb")
+        html_index = IO.read("#{path_root_proyecto}/Argentina/app/views/welcome/index.html.erb")
         html_index.gsub!("<h1>Ejecuciones de pruebas</h1>","#{pegar}")
-        #html_index_nuevo = "#{path_root_proyecto}/Argentina/app/views/welcome/index.html.erb"
-        html_index_nuevo = "/var/lib/jenkins/GobiernoDigital/Argentina/app/views/welcome/index.html.erb"
+        html_index_nuevo = "#{path_root_proyecto}/Argentina/app/views/welcome/index.html.erb"
         IO.write("#{html_index_nuevo}",html_index)
         html_index.gsub!("QA231425267","#{pegar_1}")
         IO.write("#{html_index_nuevo}",html_index)
-        #File.delete("#{path_root_proyecto}/Argentina/test/report/constructor_de_reportes/#{fichero}")
-        File.delete("/var/lib/jenkins/GobiernoDigital/Argentina/test/report/constructor_de_reportes/#{fichero}/Argentina/test/report/constructor_de_reportes/#{fichero}")
+        File.delete("#{path_root_proyecto}/Argentina/test/report/constructor_de_reportes/#{fichero}")
       else
         nombre_del_archivo = "#{plataforma}_#{tag}_#{fecha}_#{hora}.#{formato}"
-        #File.rename "#{path_root_proyecto}/Argentina/test/report/constructor_de_reportes/#{fichero}", "#{path_root_proyecto}/Argentina/test/report/json_reportes/#{nombre_del_archivo}"
-        File.rename "/var/lib/jenkins/GobiernoDigital/Argentina/test/report/constructor_de_reportes/#{fichero}/Argentina/test/report/constructor_de_reportes/#{fichero}", "/var/lib/jenkins/GobiernoDigital/Argentina/test/report/constructor_de_reportes/#{fichero}/Argentina/test/report/json_reportes/#{nombre_del_archivo}"
+        File.rename "#{path_root_proyecto}/Argentina/test/report/constructor_de_reportes/#{fichero}", "#{path_root_proyecto}/Argentina/test/report/json_reportes/#{nombre_del_archivo}"
       end
     end
   end
