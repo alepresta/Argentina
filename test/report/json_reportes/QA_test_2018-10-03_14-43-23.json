@@ -1,0 +1,119 @@
+[
+  {
+    "uri": "features/test.feature",
+    "id": "test-borrador",
+    "keyword": "Feature",
+    "name": "test borrador",
+    "description": "",
+    "line": 1,
+    "elements": [
+      {
+        "id": "test-borrador;",
+        "keyword": "Scenario",
+        "name": "",
+        "description": "",
+        "line": 4,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@test",
+            "line": 3
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "cukehub-1.0.0/lib/cukehub.rb:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 24194
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/env.rb:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1945013855
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 25566
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "en el primer paso",
+            "line": 5,
+            "output": [
+              "2018-10-03",
+              "14-43-22",
+              "/home/apresta/Workspace",
+              "/home/apresta/Workspace/Argentina/test/report/reporte.html"
+            ],
+            "match": {
+              "location": "features/step_definitions/borradores/test.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 932564420
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "en el segundo paso",
+            "line": 6,
+            "match": {
+              "location": "features/step_definitions/borradores/test.rb:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 22257
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "en el tercer paso",
+            "line": 7,
+            "match": {
+              "location": "features/step_definitions/borradores/test.rb:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 13649
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/env.rb:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 169718523
+            }
+          },
+          {
+            "match": {
+              "location": "cukehub-1.0.0/lib/cukehub.rb:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 855262792
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
