@@ -2421,3 +2421,50 @@ ActionView::Template::Error (undefined local variable or method `fsdfds' for #<#
 app/views/welcome/index.html.erb:17:in `block in _app_views_welcome_index_html_erb___2434380067775544916_70274567419780'
 app/views/welcome/index.html.erb:15:in `each'
 app/views/welcome/index.html.erb:15:in `_app_views_welcome_index_html_erb___2434380067775544916_70274567419780'
+Started GET "/" for 127.0.0.1 at 2018-10-03 14:37:26 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (219.6ms)
+Completed 500 Internal Server Error in 221ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `fsdfds' for #<#<Class:0x00007fd41c16af10>:0x00007fd41c169548>):
+    14: 
+    15: <% Dir.new("/home/apresta/Workspace/Argentina/app/views/pages/").each { |file| %>
+    16: <%  "#{file}" %>
+    17: <%  fsdfds %>
+    18: <%  } %>
+    19: 
+    20: </br>
+  
+app/views/welcome/index.html.erb:17:in `block in _app_views_welcome_index_html_erb___2434380067775544916_70274490522500'
+app/views/welcome/index.html.erb:15:in `each'
+app/views/welcome/index.html.erb:15:in `_app_views_welcome_index_html_erb___2434380067775544916_70274490522500'
+Started GET "/" for 127.0.0.1 at 2018-10-03 14:37:28 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (164.6ms)
+Completed 500 Internal Server Error in 167ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `fsdfds' for #<#<Class:0x00007fd41c16af10>:0x00007fd404168520>):
+    14: 
+    15: <% Dir.new("/home/apresta/Workspace/Argentina/app/views/pages/").each { |file| %>
+    16: <%  "#{file}" %>
+    17: <%  fsdfds %>
+    18: <%  } %>
+    19: 
+    20: </br>
+  
+app/views/welcome/index.html.erb:17:in `block in _app_views_welcome_index_html_erb___2434380067775544916_70274289191340'
+app/views/welcome/index.html.erb:15:in `each'
+app/views/welcome/index.html.erb:15:in `_app_views_welcome_index_html_erb___2434380067775544916_70274289191340'
+Started GET "/" for 127.0.0.1 at 2018-10-03 14:37:45 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 25ms (Views: 23.4ms | ActiveRecord: 0.0ms)
+
+
