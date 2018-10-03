@@ -1980,3 +1980,444 @@ Processing by WelcomeController#index as HTML
 Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-10-03 12:03:38 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 15ms (Views: 13.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-03 13:03:24 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 12ms (Views: 11.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-03 13:03:27 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 18ms (Views: 16.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/QA_test" for 127.0.0.1 at 2018-10-03 13:03:32 -0300
+Processing by HighVoltage::PagesController#show as HTML
+  Parameters: {"id"=>"QA_test"}
+  Rendering pages/QA_test.html within layouts/application
+  Rendered pages/QA_test.html within layouts/application (1.5ms)
+Completed 200 OK in 12ms (Views: 11.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-03 13:03:41 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-03 13:03:43 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 16ms (Views: 15.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/QA_test" for 127.0.0.1 at 2018-10-03 13:04:28 -0300
+Processing by HighVoltage::PagesController#show as HTML
+  Parameters: {"id"=>"QA_test"}
+  Rendering pages/QA_test.html within layouts/application
+  Rendered pages/QA_test.html within layouts/application (2.0ms)
+Completed 200 OK in 16ms (Views: 15.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-03 13:04:51 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 16ms (Views: 14.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/QA_test" for 127.0.0.1 at 2018-10-03 13:04:55 -0300
+Processing by HighVoltage::PagesController#show as HTML
+  Parameters: {"id"=>"QA_test"}
+  Rendering pages/QA_test.html within layouts/application
+  Rendered pages/QA_test.html within layouts/application (1.7ms)
+Completed 200 OK in 13ms (Views: 12.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-03 13:06:29 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 23ms (Views: 21.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/QA_test" for 127.0.0.1 at 2018-10-03 13:06:33 -0300
+Processing by HighVoltage::PagesController#show as HTML
+  Parameters: {"id"=>"QA_test"}
+  Rendering pages/QA_test.html within layouts/application
+  Rendered pages/QA_test.html within layouts/application (2.5ms)
+Completed 200 OK in 18ms (Views: 17.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/QA_test" for 127.0.0.1 at 2018-10-03 13:06:37 -0300
+Processing by HighVoltage::PagesController#show as HTML
+  Parameters: {"id"=>"QA_test"}
+  Rendering pages/QA_test.html within layouts/application
+  Rendered pages/QA_test.html within layouts/application (1.7ms)
+Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-03 13:11:08 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    12: 
+    13: <%= link_to 'Nuevos Casos de Prueba',  '35.198.13.196/login.php'%>
+    14: 
+    15: <%=  @paginas_ejecutadas.each do |caso|
+    16: 
+    17:      puts caso
+    18: 
+  
+app/views/welcome/index.html.erb:15:in `_app_views_welcome_index_html_erb___2434380067775544916_70274187799220'
+Started GET "/" for 127.0.0.1 at 2018-10-03 13:11:48 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/apresta/Workspace/Argentina/app/views/welcome/index.html.erb:20: syntax error, unexpected keyword_end
+...ze;@output_buffer.append=(  end );@output_buffer.safe_append...
+...                            ^~~
+/home/apresta/Workspace/Argentina/app/views/welcome/index.html.erb:42: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+          ^~~~~~
+/home/apresta/Workspace/Argentina/app/views/welcome/index.html.erb:44: syntax error, unexpected keyword_end, expecting ')'
+          end
+          ^~~):
+  
+app/views/welcome/index.html.erb:20: syntax error, unexpected keyword_end
+app/views/welcome/index.html.erb:42: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/welcome/index.html.erb:44: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/" for 127.0.0.1 at 2018-10-03 13:12:16 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/apresta/Workspace/Argentina/app/views/welcome/index.html.erb:44: syntax error, unexpected end-of-input, expecting keyword_end
+          end
+             ^):
+  
+app/views/welcome/index.html.erb:44: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/" for 127.0.0.1 at 2018-10-03 13:12:45 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 15ms (Views: 14.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-03 13:13:13 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 22ms (Views: 20.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-03 13:13:48 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 20ms (Views: 19.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-03 13:13:50 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 19ms (Views: 17.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-03 13:13:51 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 17ms (Views: 15.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-03 13:13:53 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 18ms (Views: 16.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-03 13:14:07 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 18ms (Views: 17.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-03 13:14:09 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 19ms (Views: 18.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-03 13:14:12 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 16ms (Views: 14.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-03 13:14:29 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 18ms (Views: 16.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-03 13:14:42 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 14ms (Views: 13.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-03 13:14:43 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 18ms (Views: 16.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-03 13:14:44 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 15ms (Views: 13.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-03 13:14:45 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 18ms (Views: 16.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-03 13:14:48 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 21ms (Views: 19.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-03 13:16:11 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.1ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    14: 
+    15: 
+    16: 
+    17:   <%=  @paginas_ejecutadas.each do |wert|
+    18:     wert
+    19: 
+    20:   end %>
+  
+app/views/welcome/index.html.erb:17:in `_app_views_welcome_index_html_erb___2434380067775544916_70274289877320'
+Started GET "/" for 127.0.0.1 at 2018-10-03 13:17:32 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (193.9ms)
+Completed 500 Internal Server Error in 196ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `nombre_del_archivo' for #<#<Class:0x00007fd4251589d8>:0x00007fd4259744f0>):
+    13: <%= link_to 'Nuevos Casos de Prueba',  '35.198.13.196/login.php'%>
+    14: 
+    15: <%       paginas_ejecutadas = [
+    16:     {:nombre_del_archivo => "#{nombre_del_archivo}",:tag_del_archivo => "#{tag}", :estado => "#{estado}", :formato => "#{formato}", :plataforma => "#{plataforma}" , :fecha => "#{fecha}", :hora => "#{hora}" }
+    17: ]
+    18:          @paginas_ejecutadas = paginas_ejecutadas %>
+    19: 
+  
+app/views/welcome/index.html.erb:16:in `_app_views_welcome_index_html_erb___2434380067775544916_70274570235260'
+Started GET "/" for 127.0.0.1 at 2018-10-03 13:18:08 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (197.8ms)
+Completed 500 Internal Server Error in 201ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `nombre_del_archivo' for #<#<Class:0x00007fd4251589d8>:0x00007fd4102dc1c0>):
+    13: <%= link_to 'Nuevos Casos de Prueba',  '35.198.13.196/login.php'%>
+    14: 
+    15: <%       @paginas_ejecutadas = [
+    16:     {:nombre_del_archivo => "#{nombre_del_archivo}",:tag_del_archivo => "#{tag}", :estado => "#{estado}", :formato => "#{formato}", :plataforma => "#{plataforma}" , :fecha => "#{fecha}", :hora => "#{hora}" }
+    17: ]
+    18:         %>
+    19: 
+  
+app/views/welcome/index.html.erb:16:in `_app_views_welcome_index_html_erb___2434380067775544916_70274390615380'
+Started GET "/" for 127.0.0.1 at 2018-10-03 13:24:09 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (215.3ms)
+Completed 500 Internal Server Error in 217ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `path_root_proyecto' for #<#<Class:0x00007fd4251589d8>:0x00007fd418149288>
+Did you mean?  path_to_font):
+    12: 
+    13: <%= link_to 'Nuevos Casos de Prueba',  '35.198.13.196/login.php'%>
+    14: 
+    15: <% Dir.new("#{path_root_proyecto}/Argentina/app/views/pages/").each { |file| puts file } %>
+    16: 
+    17: </br>
+    18: <br>
+  
+app/views/welcome/index.html.erb:15:in `_app_views_welcome_index_html_erb___2434380067775544916_70274456899000'
+Started GET "/" for 127.0.0.1 at 2018-10-03 13:24:53 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 13ms (Views: 11.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-03 13:25:02 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 16ms (Views: 15.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-03 13:25:14 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 21ms (Views: 19.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-03 13:25:16 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 21ms (Views: 19.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-03 13:25:19 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 20ms (Views: 18.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-03 13:26:55 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.4ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `call' for Dir:Class):
+    12: 
+    13: <%= link_to 'Nuevos Casos de Prueba',  '35.198.13.196/login.php'%>
+    14: 
+    15: <% Dir.("/home/apresta/Workspace/Argentina/app/views/pages/").each { |file|  file } %>
+    16: 
+    17: </br>
+    18: <br>
+  
+app/views/welcome/index.html.erb:15:in `_app_views_welcome_index_html_erb___2434380067775544916_70274573957420'
+Started GET "/" for 127.0.0.1 at 2018-10-03 13:28:08 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 19ms (Views: 17.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-03 13:28:19 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 16ms (Views: 15.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-03 13:28:21 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 18ms (Views: 17.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-03 13:29:09 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 22ms (Views: 20.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-03 13:29:10 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 16ms (Views: 15.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-03 13:29:43 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 15ms (Views: 13.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-03 13:29:44 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 18ms (Views: 16.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-03 13:30:09 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (177.3ms)
+Completed 500 Internal Server Error in 182ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `fsdfds' for #<#<Class:0x00007fd4251589d8>:0x00007fd425415888>):
+    14: 
+    15: <% Dir.new("/home/apresta/Workspace/Argentina/app/views/pages/").each { |file| %>
+    16: <%  "#{file}" %>
+    17: <%  fsdfds %>
+    18: <%  } %>
+    19: 
+    20: </br>
+  
+app/views/welcome/index.html.erb:17:in `block in _app_views_welcome_index_html_erb___2434380067775544916_70274567419780'
+app/views/welcome/index.html.erb:15:in `each'
+app/views/welcome/index.html.erb:15:in `_app_views_welcome_index_html_erb___2434380067775544916_70274567419780'

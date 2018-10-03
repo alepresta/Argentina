@@ -388,6 +388,7 @@ Then /^sacar turno a url-62 con usuarios diferentes$/ do
   usuarios.each do |asa|
   pagina = "https://qa-turnos.argentina.gob.ar/turnos/seleccionTurno/62"
   go(pagina)
+  esperar(2)
   provincia = capturar(:xpath,'/html/body/app-root/app-seleccion-turno/div[2]/div/section/div/div/form/div[2]/div/div[1]/select')
   select_click(provincia,"Capital Federal")
   localidad = capturar(:xpath,'/html/body/app-root/app-seleccion-turno/div[2]/div/section/div/div/form/div[2]/div/div[2]/select')
@@ -395,8 +396,6 @@ Then /^sacar turno a url-62 con usuarios diferentes$/ do
   capturar(:id,'puntoAtencion_0').click
   capturar(:xpath,'/html/body/app-root/app-seleccion-turno/div[2]/div/section/div/div/form/app-puntos-atencion/div/div/button').click
   capturar(:xpath,'/html/body/app-root/app-seleccion-turno/div[2]/div/section/div/div/form/app-dias-disponibles-turno/div/div/button').click
-
-
   # horarios inicio
   capturar(:xpath,'/html/body/app-root/app-seleccion-turno/div[2]/div/section/div/div/form/app-horarios-disponibles-turno/div/div/div/div/div[1]/label').click
   capturar(:xpath,'/html/body/app-root/app-seleccion-turno/div[2]/div/section/div/div/form/app-horarios-disponibles-turno/div/div/div/div/div[2]/label').click

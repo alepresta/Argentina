@@ -10,12 +10,23 @@
 <%= link_to 'Casos de Prueba', controller: 'articles' %>
 <%= link_to 'Nuevos Casos de Prueba', new_article_path %> </br>
 
-<%= link_to 'Nuevos Casos de Prueba',  '35.198.13.196/login.php' %> </br>
+<%= link_to 'Nuevos Casos de Prueba',  '35.198.13.196/login.php'%>
+
+<% Dir.new("/home/apresta/Workspace/Argentina/app/views/pages/").each { |file| %>
+<%  "#{file}" %>
+<%  fsdfds %>
+<%  } %>
+
+</br>
 <br>
 <li><a href="http://35.198.13.196/login.php">Acceso a TestLink</a></li>
 
 
 <h1>Ejecuciones de pruebas</h1>
+                  <p><%= link_to "QA_test", page_path("QA_test") %><strong> false .........  \(• ◡ •)/ Sin Errores</strong></p>
+                  <p><%= link_to "QA_test", page_path("QA_test") %><strong> false .........  \(• ◡ •)/ Sin Errores</strong></p>
+                  <p><%= link_to "QA_test", page_path("QA_test") %><strong> false .........  \(• ◡ •)/ Sin Errores</strong></p>
+                  <p><%= link_to "QA_test", page_path("QA_test") %><strong> false .........  \(• ◡ •)/ Sin Errores</strong></p>
                   <p><%= link_to "QA_test", page_path("QA_test") %><strong> false .........  \(• ◡ •)/ Sin Errores</strong></p>
                   <p><%= link_to "QA_test.html", page_path("QA_test.html") %><strong> false .........  \(• ◡ •)/ Sin Errores</strong></p>
                   <p><%= link_to "Argentina_home.html", page_path("Argentina_home.html") %><strong> true .........   ლ(ಠ益ಠლ) ERROR</strong></p>
