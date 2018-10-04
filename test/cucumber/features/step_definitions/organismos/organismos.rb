@@ -379,7 +379,7 @@ Then /^26- Ministerio Público de la Defensa$/ do
   else
     puts fail "Organismo no encontrado: #{organismo_a_encontrar.red}: ...........................[ERROR]"
   end
-  status_link(200,link_organismo)
+  #status_link(200,link_organismo)
 end
 
 Then /^27- Congreso de la Nación Argentina$/ do
