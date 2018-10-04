@@ -55,9 +55,13 @@ at_exit do
         if html_content.include? 'step failed'
           estado_texto = "  ლ(ಠ益ಠლ) ERROR"
           estado = true
-        else
-          estado_texto = " \\(• ◡ •)/ Sin Errores"
-          estado = false
+          if html_content.include? 'passed'
+            estado_texto = " \\(• ◡ •)/ Sin Errores"
+            estado = false
+          else
+            estado_texto = "  ⊙﹏⊙ Inestable"
+            estado = true
+          end
         end
         pegar   = "<h1>Ejecuciones de pruebas</h1>
                   QA231425267"
