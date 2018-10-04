@@ -371,15 +371,15 @@ end
 Then /^26- Ministerio Público de la Defensa$/ do
   organismos
   organismo_a_encontrar = "Ministerio Público de la Defensa"
-  organismo_encontrado = capturar(:xpath, '//*[@id="block-system-main"]/section[2]/div/div[7]/div/div/div/div/div[3]/a/div/h3/strong')
-  lin_organismo = capturar(:xpath, '//*[@id="block-system-main"]/section[2]/div/div[7]/div/div/div/div/div[3]/a')
+  organismo_encontrado = capturar(:xpath, '/html/body/main/div[2]/div/section[2]/div/div[7]/div/div/div/div/div[3]/a/div/h3/strong')
+  lin_organismo = capturar(:xpath, '/html/body/main/div[2]/div/section[2]/div/div[7]/div/div/div/div/div[3]/a')
   link_organismo = lin_organismo.attribute("href")
   if organismo_encontrado.text.include? organismo_a_encontrar
     puts "Organismo encontrado: #{organismo_a_encontrar.yellow}"
   else
     puts fail "Organismo no encontrado: #{organismo_a_encontrar.red}: ...........................[ERROR]"
   end
-  #status_link(200,link_organismo)
+  # status_link(200,link_organismo)
 end
 
 Then /^27- Congreso de la Nación Argentina$/ do
